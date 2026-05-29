@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Link Builder — For Them / Autostraddle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --grass:#BABA00; --poppy:#DE0100; --stone:#CEC6BA; --stone2:#ADA7A0;
+    --moss:#524A26; --hydrangea:#0969E4; --black:#000; --white:#fff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Space Grotesk',system-ui,sans-serif;
+    background:var(--stone); color:var(--black);
+    min-height:100vh; padding:32px 16px; line-height:1.45;
+  }
+  .wrap{max-width:680px;margin:0 auto}
+  header{margin-bottom:28px}
+  .kicker{font-family:'Roboto Mono',monospace;font-size:12px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--moss);margin-bottom:8px}
+  h1{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+  h1 span{color:var(--poppy)}
+  .sub{margin-top:10px;font-size:15px;color:var(--moss);max-width:54ch}
+  .card{background:var(--white);border:2px solid var(--black);border-radius:14px;
+    padding:24px;margin-bottom:20px}
+  label{display:block;font-family:'Roboto Mono',monospace;font-size:12px;
+    letter-spacing:.06em;text-transform:uppercase;font-weight:600;margin-bottom:6px}
+  .hint{font-weight:400;text-transform:none;letter-spacing:0;color:var(--stone2);font-size:11px}
+  input,select{width:100%;font-family:'Roboto Mono',monospace;font-size:14px;
+    padding:12px 14px;border:1.5px solid var(--black);border-radius:8px;background:var(--white);
+    color:var(--black);margin-bottom:18px}
+  input:focus,select:focus{outline:none;border-color:var(--hydrangea);
+    box-shadow:0 0 0 3px rgba(9,105,228,.15)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .chip{font-family:'Roboto Mono',monospace;font-size:12px;padding:7px 12px;cursor:pointer;
+    border:1.5px solid var(--black);border-radius:20px;background:var(--white);transition:.12s}
+  .chip:hover{background:var(--grass)}
+  .chip.active{background:var(--black);color:var(--grass)}
+  .row{display:flex;gap:14px}
+  .row>div{flex:1}
+  .preview{background:var(--black);color:var(--grass);font-family:'Roboto Mono',monospace;
+    font-size:13px;padding:16px;border-radius:10px;word-break:break-all;line-height:1.6;
+    min-height:54px;display:flex;align-items:center}
+  .preview .ph{color:var(--stone2)}
+  .preview b{color:var(--white);font-weight:500}
+  .actions{display:flex;gap:10px;margin-top:14px}
+  button{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;cursor:pointer;
+    border:2px solid var(--black);border-radius:9px;padding:12px 18px;transition:.12s}
+  .btn-go{background:var(--grass);color:var(--black);flex:1}
+  .btn-go:hover{background:var(--black);color:var(--grass)}
+  .btn-go.copied{background:var(--hydrangea);color:var(--white);border-color:var(--hydrangea)}
+  .warn{color:var(--poppy);font-family:'Roboto Mono',monospace;font-size:12px;margin-top:-8px;
+    margin-bottom:14px;display:none}
+  .history h2{font-size:13px;font-family:'Roboto Mono',monospace;text-transform:uppercase;
+    letter-spacing:.08em;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center}
+  .history h2 a{color:var(--poppy);font-size:11px;cursor:pointer;text-decoration:underline}
+  .hist-item{border-top:1px solid var(--stone);padding:12px 0;display:flex;gap:10px;align-items:center}
+  .hist-item:first-of-type{border-top:none}
+  .hist-meta{flex:1;min-width:0}
+  .hist-camp{font-weight:600;font-size:14px}
+  .hist-url{font-family:'Roboto Mono',monospace;font-size:11px;color:var(--stone2);
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mini{border:1.5px solid var(--black);background:var(--white);border-radius:6px;
+    padding:6px 12px;font-size:13px}
+  .mini:hover{background:var(--grass)}
+  .empty{color:var(--stone2);font-size:13px;font-style:italic}
+  footer{text-align:center;font-family:'Roboto Mono',monospace;font-size:11px;
+    color:var(--moss);margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">For Them · Autostraddle</div>
+    <h1>Article <span>Link Builder</span></h1>
+    <p class="sub">Build a tracked link from an article to the membership / magazine page.
+      Clean tags tell you which articles drive sign-ups — straight into GA4 and PostHog. No bit.ly needed.</p>
+  </header>
+
+  <div class="card">
+    <label>Where are you sending people? <span class="hint">— the destination</span></label>
+    <div class="chips" id="destChips">
+      <div class="chip" data-url="https://zine-subscription.forthem.com/">Subscription landing</div>
+      <div class="chip" data-url="https://forthem.com/collections/print-issues-1/products/autostraddle-print-issue-02">Magazine (Issue 02)</div>
+      <div class="chip" data-url="https://forthem.com/products/af-membership">Membership</div>
+      <div class="chip" data-url="https://forthem.com/collections/print-issues-1">Print issue collection</div>
+      <div class="chip" data-url="">Custom…</div>
+    </div>
+    <input id="dest" type="text" placeholder="https://zine-subscription.forthem.com/" autocomplete="off">
+    <div class="warn" id="warnDest">That doesn't look like a valid URL.</div>
+
+    <label for="channel">Where's the link being placed?</label>
+    <select id="channel">
+      <option value="autostraddle|article">An Autostraddle article</option>
+      <option value="newsletter|email">Newsletter (email)</option>
+      <option value="instagram|social">Instagram — feed / bio</option>
+      <option value="instagram|social|story">Instagram — story</option>
+      <option value="threads|social">Threads</option>
+      <option value="bluesky|social">Bluesky</option>
+      <option value="facebook|social">Facebook</option>
+      <option value="twitter|social">Twitter / X</option>
+      <option value="tiktok|social">TikTok</option>
+      <option value="slack|internal">Slack (internal share)</option>
+    </select>
+
+    <div id="articleWrap">
+      <label for="article">Article URL <span class="hint">— sets the campaign tag automatically</span></label>
+      <input id="article" type="text" placeholder="https://www.autostraddle.com/the-article/" autocomplete="off">
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="campaign">Campaign <span class="hint">— the tracked name</span></label>
+        <input id="campaign" type="text" placeholder="article-slug" autocomplete="off">
+      </div>
+      <div>
+        <label for="content">Placement <span class="hint">— optional</span></label>
+        <input id="content" type="text" placeholder="e.g. inline-link / end-cta" autocomplete="off">
+      </div>
+    </div>
+
+    <label>Your tracked link</label>
+    <div class="preview" id="preview"><span class="ph">Pick a destination to start…</span></div>
+
+    <div class="actions">
+      <button class="btn-go" id="copy">Copy link</button>
+    </div>
+  </div>
+
+  <div class="card history">
+    <h2>Recent links <a id="clear">clear all</a></h2>
+    <div id="histList"><p class="empty">Links you copy show up here.</p></div>
+  </div>
+
+  <footer>Built for the editorial team · clean tags = clean reports</footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const dest = $('dest'), chan = $('channel'), article = $('article'), articleWrap = $('articleWrap'),
+      camp = $('campaign'), cont = $('content'), prev = $('preview'),
+      warnDest = $('warnDest'), copyBtn = $('copy');
+
+// free text -> clean tag: lowercase, spaces/underscores -> hyphens, strip junk
+const slug = s => (s||'').trim().toLowerCase()
+  .replace(/[\s_]+/g,'-').replace(/[^a-z0-9-]/g,'').replace(/-+/g,'-').replace(/^-|-$/g,'');
+
+let lastCampAuto = ''; // so we don't clobber a manual edit
+
+// ---- destination chips ----
+$('destChips').addEventListener('click', e=>{
+  const chip = e.target.closest('.chip'); if(!chip) return;
+  document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));
+  chip.classList.add('active');
+  if(chip.dataset.url){ dest.value = chip.dataset.url; dest.blur(); }
+  else { dest.value=''; dest.focus(); }
+  build();
+});
+
+// show Article URL field only when placing inside an article
+function syncMode(){
+  const isArticle = chan.value.split('|')[0] === 'autostraddle';
+  articleWrap.style.display = isArticle ? 'block' : 'none';
+  if(isArticle) deriveCampaign();
+}
+
+function deriveCampaign(){
+  try{
+    const u = new URL(article.value.trim());
+    const seg = u.pathname.split('/').filter(Boolean).pop() || '';
+    const auto = slug(seg);
+    if(!camp.value || camp.value === lastCampAuto){ camp.value = auto; lastCampAuto = auto; }
+  }catch(e){}
+}
+
+function build(){
+  const raw = dest.value.trim();
+  if(!raw){ prev.innerHTML = '<span class="ph">Pick a destination to start…</span>'; warnDest.style.display='none'; return null; }
+  let u;
+  try{ u = new URL(raw); }
+  catch(e){ warnDest.style.display='block'; prev.innerHTML='<span class="ph">Fix the destination URL…</span>'; return null; }
+  warnDest.style.display='none';
+
+  // strip any existing utm_* so we never double up
+  [...u.searchParams.keys()].forEach(k=>{ if(k.startsWith('utm_')) u.searchParams.delete(k); });
+
+  const [source, medium, suggested] = chan.value.split('|');
+  u.searchParams.set('utm_source', source);
+  u.searchParams.set('utm_medium', medium);
+  const c = slug(camp.value); if(c) u.searchParams.set('utm_campaign', c);
+  const v = slug(cont.value) || suggested || '';
+  if(v) u.searchParams.set('utm_content', v);
+
+  const full = u.toString();
+  const [base, query] = full.split('?');
+  prev.innerHTML = '<span><b>'+base+'</b>?'+query+'</span>';
+  return full;
+}
+
+['input','change'].forEach(ev=>{
+  dest.addEventListener(ev, build);
+  chan.addEventListener(ev, ()=>{ syncMode(); build(); });
+  article.addEventListener(ev, ()=>{ deriveCampaign(); build(); });
+  camp.addEventListener(ev, build);
+  cont.addEventListener(ev, build);
+});
+
+copyBtn.addEventListener('click', async ()=>{
+  const link = build(); if(!link) return;
+  await navigator.clipboard.writeText(link);
+  copyBtn.textContent='Copied ✓'; copyBtn.classList.add('copied');
+  setTimeout(()=>{ copyBtn.textContent='Copy link'; copyBtn.classList.remove('copied'); }, 1400);
+  saveHist(link);
+});
+
+// ---- history (localStorage) ----
+const KEY = 'ft_utm_history';
+function getHist(){ try{ return JSON.parse(localStorage.getItem(KEY))||[]; }catch(e){ return []; } }
+function saveHist(link){
+  const h = getHist().filter(x=>x.link!==link);
+  h.unshift({ link, camp: camp.value || '(no campaign)', when: Date.now() });
+  localStorage.setItem(KEY, JSON.stringify(h.slice(0,12)));
+  renderHist();
+}
+function renderHist(){
+  const h = getHist(), list = $('histList');
+  if(!h.length){ list.innerHTML='<p class="empty">Links you copy show up here.</p>'; return; }
+  list.innerHTML = h.map((x,i)=>(
+    '<div class="hist-item"><div class="hist-meta">'+
+    '<div class="hist-camp">'+x.camp+'</div>'+
+    '<div class="hist-url">'+x.link+'</div></div>'+
+    '<button class="mini" data-i="'+i+'">Copy</button></div>'
+  )).join('');
+  list.querySelectorAll('.mini').forEach(b=>b.addEventListener('click',async()=>{
+    const link = getHist()[b.dataset.i].link;
+    await navigator.clipboard.writeText(link);
+    b.textContent='✓'; setTimeout(()=>b.textContent='Copy',1200);
+  }));
+}
+$('clear').addEventListener('click',()=>{ localStorage.removeItem(KEY); renderHist(); });
+
+// init
+syncMode(); renderHist();
+</script>
+</body>
+</html>
