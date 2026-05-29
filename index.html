@@ -69,6 +69,14 @@
     padding:6px 12px;font-size:13px}
   .mini:hover{background:var(--grass)}
   .empty{color:var(--stone2);font-size:13px;font-style:italic}
+  .signin{font-family:'Roboto Mono',monospace;font-size:12px;color:var(--moss);margin-top:14px;
+    display:flex;align-items:center;gap:8px}
+  .signin select{width:auto;font-size:12px;padding:5px 10px;margin:0;border-radius:6px;
+    border:1.5px solid var(--black);background:var(--white)}
+  .hist-who{display:inline-block;font-family:'Roboto Mono',monospace;font-size:10px;font-weight:600;
+    text-transform:uppercase;letter-spacing:.06em;background:var(--black);color:var(--grass);
+    padding:2px 7px;border-radius:4px;margin-right:8px;vertical-align:1px}
+  .hist-clicks{font-family:'Roboto Mono',monospace;font-size:12px;color:var(--moss);margin-left:8px}
   .perf h2{font-size:13px;font-family:'Roboto Mono',monospace;text-transform:uppercase;
     letter-spacing:.08em;margin-bottom:14px}
   .perf h2 .hint{text-transform:none;letter-spacing:0}
@@ -88,8 +96,20 @@
   <header>
     <div class="kicker">For Them · Autostraddle</div>
     <h1>Article <span>Link Builder</span></h1>
-    <p class="sub">Build a tracked link from an article to the membership / magazine page.
-      Clean tags tell you which articles drive sign-ups — straight into GA4 and PostHog. No bit.ly needed.</p>
+    <p class="sub">Build a tracked link to the membership, magazine, or wherever you're pointing people.
+      Clean tags tell you which links drive sign-ups — straight into PostHog. No bit.ly needed.</p>
+    <div class="signin">Signed in as
+      <select id="who">
+        <option value="">— pick your name —</option>
+        <option>Kylo</option>
+        <option>Em</option>
+        <option>Emily</option>
+        <option>Motti</option>
+        <option>Riese</option>
+        <option>Kayla</option>
+        <option>Mal</option>
+      </select>
+    </div>
   </header>
 
   <div class="card">
@@ -143,7 +163,7 @@
   </div>
 
   <div class="card perf">
-    <h2>Top articles by clicks <span class="hint">— last 90 days, updates daily</span></h2>
+    <h2>Most-clicked links <span class="hint">— last 90 days, updates daily</span></h2>
     <div id="perfBody"><p class="empty">Loading…</p></div>
   </div>
 
@@ -158,14 +178,17 @@
 <script>
 const $ = id => document.getElementById(id);
 const dest = $('dest'), chan = $('channel'), article = $('article'), articleWrap = $('articleWrap'),
-      camp = $('campaign'), cont = $('content'), prev = $('preview'),
+      camp = $('campaign'), cont = $('content'), who = $('who'), prev = $('preview'),
       warnDest = $('warnDest'), copyBtn = $('copy');
 
 // free text -> clean tag: lowercase, spaces/underscores -> hyphens, strip junk
 const slug = s => (s||'').trim().toLowerCase()
   .replace(/[\s_]+/g,'-').replace(/[^a-z0-9-]/g,'').replace(/-+/g,'-').replace(/^-|-$/g,'');
+// HTML escape for anything rendered from history / data.json
+const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-let lastCampAuto = ''; // so we don't clobber a manual edit
+let lastCampAuto = '';   // so we don't clobber a manual edit
+let campsClicks = {};    // campaign -> click count, filled when data.json loads
 
 // ---- destination chips ----
 $('destChips').addEventListener('click', e=>{
@@ -210,6 +233,7 @@ function build(){
   const c = slug(camp.value); if(c) u.searchParams.set('utm_campaign', c);
   const v = slug(cont.value) || suggested || '';
   if(v) u.searchParams.set('utm_content', v);
+  const t = slug(who.value); if(t) u.searchParams.set('utm_term', t);
 
   const full = u.toString();
   const [base, query] = full.split('?');
@@ -238,19 +262,24 @@ const KEY = 'ft_utm_history';
 function getHist(){ try{ return JSON.parse(localStorage.getItem(KEY))||[]; }catch(e){ return []; } }
 function saveHist(link){
   const h = getHist().filter(x=>x.link!==link);
-  h.unshift({ link, camp: camp.value || '(no campaign)', when: Date.now() });
+  h.unshift({ link, camp: camp.value || '(no campaign)', who: who.value || '', when: Date.now() });
   localStorage.setItem(KEY, JSON.stringify(h.slice(0,12)));
   renderHist();
 }
 function renderHist(){
   const h = getHist(), list = $('histList');
   if(!h.length){ list.innerHTML='<p class="empty">Links you copy show up here.</p>'; return; }
-  list.innerHTML = h.map((x,i)=>(
-    '<div class="hist-item"><div class="hist-meta">'+
-    '<div class="hist-camp">'+x.camp+'</div>'+
-    '<div class="hist-url">'+x.link+'</div></div>'+
-    '<button class="mini" data-i="'+i+'">Copy</button></div>'
-  )).join('');
+  list.innerHTML = h.map((x,i)=>{
+    const clicks = campsClicks[x.camp];
+    return '<div class="hist-item"><div class="hist-meta">'+
+      '<div class="hist-camp">'+
+        (x.who ? '<span class="hist-who">'+esc(x.who)+'</span>' : '')+
+        esc(x.camp)+
+        (clicks ? '<span class="hist-clicks">'+Number(clicks).toLocaleString()+' clicks</span>' : '')+
+      '</div>'+
+      '<div class="hist-url">'+esc(x.link)+'</div></div>'+
+      '<button class="mini" data-i="'+i+'">Copy</button></div>';
+  }).join('');
   list.querySelectorAll('.mini').forEach(b=>b.addEventListener('click',async()=>{
     const link = getHist()[b.dataset.i].link;
     await navigator.clipboard.writeText(link);
@@ -259,12 +288,14 @@ function renderHist(){
 }
 $('clear').addEventListener('click',()=>{ localStorage.removeItem(KEY); renderHist(); });
 
-// ---- article performance (clicks) from data.json, refreshed daily by GitHub Action ----
-const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+// ---- link performance (clicks) from data.json, refreshed daily on the VPS ----
 fetch('data.json?cb=' + Date.now())
   .then(r => r.ok ? r.json() : Promise.reject())
   .then(d => {
     const rows = (d.articles || []).filter(a => a.clicks > 0).sort((a,b)=>b.clicks-a.clicks);
+    // Build campaign -> clicks map so recent links can show their own click counts
+    campsClicks = Object.fromEntries(rows.map(a => [a.campaign, a.clicks]));
+    renderHist(); // re-render so existing recent items pick up their click counts
     const body = $('perfBody');
     if(!rows.length){
       body.innerHTML = '<p class="empty">No tracked clicks yet — links you build here show up within a day of going live.</p>';
@@ -272,11 +303,18 @@ fetch('data.json?cb=' + Date.now())
     }
     const upd = d.updated ? new Date(d.updated).toLocaleString() : '';
     body.innerHTML =
-      '<table><thead><tr><th>Article (campaign)</th><th class="num">Clicks</th></tr></thead><tbody>' +
+      '<table><thead><tr><th>Campaign</th><th class="num">Clicks</th></tr></thead><tbody>' +
       rows.map(a => '<tr><td>'+esc(a.campaign)+'</td><td class="num">'+Number(a.clicks).toLocaleString()+'</td></tr>').join('') +
       '</tbody></table>' + (upd ? '<div class="updated">Updated '+esc(upd)+'</div>' : '');
   })
   .catch(()=>{ $('perfBody').innerHTML = '<p class="empty">Stats will appear here once the daily sync runs.</p>'; });
+
+// teammate name: restore + persist, and re-render preview / history on change
+who.value = localStorage.getItem('ft_utm_who') || '';
+who.addEventListener('change', ()=>{
+  localStorage.setItem('ft_utm_who', who.value);
+  build(); renderHist();
+});
 
 // init
 syncMode(); renderHist();
