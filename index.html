@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
 <title>Link Builder — For Them / Autostraddle</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,6 +69,16 @@
     padding:6px 12px;font-size:13px}
   .mini:hover{background:var(--grass)}
   .empty{color:var(--stone2);font-size:13px;font-style:italic}
+  .perf h2{font-size:13px;font-family:'Roboto Mono',monospace;text-transform:uppercase;
+    letter-spacing:.08em;margin-bottom:14px}
+  .perf h2 .hint{text-transform:none;letter-spacing:0}
+  .perf table{width:100%;border-collapse:collapse;font-size:14px}
+  .perf th,.perf td{text-align:left;padding:9px 6px;border-bottom:1px solid var(--stone)}
+  .perf th{font-family:'Roboto Mono',monospace;font-size:11px;text-transform:uppercase;
+    letter-spacing:.06em;color:var(--moss)}
+  .perf td.num,.perf th.num{text-align:right;font-family:'Roboto Mono',monospace;font-weight:600}
+  .perf tr:last-child td{border-bottom:none}
+  .perf .updated{font-family:'Roboto Mono',monospace;font-size:11px;color:var(--stone2);margin-top:14px}
   footer{text-align:center;font-family:'Roboto Mono',monospace;font-size:11px;
     color:var(--moss);margin-top:8px}
 </style>
@@ -129,6 +140,11 @@
     <div class="actions">
       <button class="btn-go" id="copy">Copy link</button>
     </div>
+  </div>
+
+  <div class="card perf">
+    <h2>Top articles by clicks <span class="hint">— last 90 days, updates daily</span></h2>
+    <div id="perfBody"><p class="empty">Loading…</p></div>
   </div>
 
   <div class="card history">
@@ -242,6 +258,25 @@ function renderHist(){
   }));
 }
 $('clear').addEventListener('click',()=>{ localStorage.removeItem(KEY); renderHist(); });
+
+// ---- article performance (clicks) from data.json, refreshed daily by GitHub Action ----
+const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+fetch('data.json?cb=' + Date.now())
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(d => {
+    const rows = (d.articles || []).filter(a => a.clicks > 0).sort((a,b)=>b.clicks-a.clicks);
+    const body = $('perfBody');
+    if(!rows.length){
+      body.innerHTML = '<p class="empty">No tracked clicks yet — links you build here show up within a day of going live.</p>';
+      return;
+    }
+    const upd = d.updated ? new Date(d.updated).toLocaleString() : '';
+    body.innerHTML =
+      '<table><thead><tr><th>Article (campaign)</th><th class="num">Clicks</th></tr></thead><tbody>' +
+      rows.map(a => '<tr><td>'+esc(a.campaign)+'</td><td class="num">'+Number(a.clicks).toLocaleString()+'</td></tr>').join('') +
+      '</tbody></table>' + (upd ? '<div class="updated">Updated '+esc(upd)+'</div>' : '');
+  })
+  .catch(()=>{ $('perfBody').innerHTML = '<p class="empty">Stats will appear here once the daily sync runs.</p>'; });
 
 // init
 syncMode(); renderHist();
