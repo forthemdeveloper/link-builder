@@ -168,7 +168,7 @@
   </div>
 
   <div class="card history">
-    <h2>Recent links <a id="clear">clear all</a></h2>
+    <h2>Recent links</h2>
     <div id="histList"><p class="empty">Links you copy show up here.</p></div>
   </div>
 
@@ -292,8 +292,6 @@ function renderHist(){
     b.textContent='✓'; setTimeout(()=>b.textContent='Copy',1200);
   }));
 }
-$('clear').addEventListener('click',()=>{ localStorage.removeItem(KEY); renderHist(); });
-
 // ---- link performance (clicks) from data.json, refreshed daily on the VPS ----
 fetch('data.json?cb=' + Date.now())
   .then(r => r.ok ? r.json() : Promise.reject())
