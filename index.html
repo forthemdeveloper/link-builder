@@ -187,8 +187,9 @@ const slug = s => (s||'').trim().toLowerCase()
 // HTML escape for anything rendered from history / data.json
 const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-let lastCampAuto = '';   // so we don't clobber a manual edit
-let campsClicks = {};    // campaign -> click count, filled when data.json loads
+let lastCampAuto = '';        // so we don't clobber a manual edit
+let campsClicks = {};         // campaign -> click count, from data.json
+let campsConversions = {};    // campaign -> sign-up count, from data.json
 
 // ---- destination chips ----
 $('destChips').addEventListener('click', e=>{
@@ -271,11 +272,15 @@ function renderHist(){
   if(!h.length){ list.innerHTML='<p class="empty">Links you copy show up here.</p>'; return; }
   list.innerHTML = h.map((x,i)=>{
     const clicks = campsClicks[x.camp];
+    const sig = campsConversions[x.camp];
+    const stats = clicks
+      ? Number(clicks).toLocaleString() + ' clicks' + (sig ? ' · ' + sig + ' sign-up' + (sig===1?'':'s') : '')
+      : '';
     return '<div class="hist-item"><div class="hist-meta">'+
       '<div class="hist-camp">'+
         (x.who ? '<span class="hist-who">'+esc(x.who)+'</span>' : '')+
         esc(x.camp)+
-        (clicks ? '<span class="hist-clicks">'+Number(clicks).toLocaleString()+' clicks</span>' : '')+
+        (stats ? '<span class="hist-clicks">'+stats+'</span>' : '')+
       '</div>'+
       '<div class="hist-url">'+esc(x.link)+'</div></div>'+
       '<button class="mini" data-i="'+i+'">Copy</button></div>';
@@ -292,10 +297,13 @@ $('clear').addEventListener('click',()=>{ localStorage.removeItem(KEY); renderHi
 fetch('data.json?cb=' + Date.now())
   .then(r => r.ok ? r.json() : Promise.reject())
   .then(d => {
-    const rows = (d.articles || []).filter(a => a.clicks > 0).sort((a,b)=>b.clicks-a.clicks);
-    // Build campaign -> clicks map so recent links can show their own click counts
-    campsClicks = Object.fromEntries(rows.map(a => [a.campaign, a.clicks]));
-    renderHist(); // re-render so existing recent items pick up their click counts
+    const rows = (d.articles || [])
+      .filter(a => a.clicks > 0 || (a.conversions||0) > 0)
+      .sort((a,b)=> b.clicks - a.clicks || (b.conversions||0) - (a.conversions||0));
+    // Build campaign maps so recent links can show their own counts
+    campsClicks      = Object.fromEntries(rows.map(a => [a.campaign, a.clicks]));
+    campsConversions = Object.fromEntries(rows.map(a => [a.campaign, a.conversions || 0]));
+    renderHist(); // re-render so existing recent items pick up live counts
     const body = $('perfBody');
     if(!rows.length){
       body.innerHTML = '<p class="empty">No tracked clicks yet — links you build here show up within a day of going live.</p>';
@@ -303,8 +311,15 @@ fetch('data.json?cb=' + Date.now())
     }
     const upd = d.updated ? new Date(d.updated).toLocaleString() : '';
     body.innerHTML =
-      '<table><thead><tr><th>Campaign</th><th class="num">Clicks</th></tr></thead><tbody>' +
-      rows.map(a => '<tr><td>'+esc(a.campaign)+'</td><td class="num">'+Number(a.clicks).toLocaleString()+'</td></tr>').join('') +
+      '<table><thead><tr><th>Campaign</th><th class="num">Clicks</th><th class="num">Sign-ups</th><th class="num">CVR</th></tr></thead><tbody>' +
+      rows.map(a => {
+        const sig = Number(a.conversions || 0);
+        const cvr = (a.clicks && sig) ? (Math.round(sig / a.clicks * 1000) / 10) + '%' : '—';
+        return '<tr><td>'+esc(a.campaign)+'</td>'+
+               '<td class="num">'+Number(a.clicks).toLocaleString()+'</td>'+
+               '<td class="num">'+(sig ? sig.toLocaleString() : '—')+'</td>'+
+               '<td class="num">'+cvr+'</td></tr>';
+      }).join('') +
       '</tbody></table>' + (upd ? '<div class="updated">Updated '+esc(upd)+'</div>' : '');
   })
   .catch(()=>{ $('perfBody').innerHTML = '<p class="empty">Stats will appear here once the daily sync runs.</p>'; });
