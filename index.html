@@ -187,9 +187,10 @@ const slug = s => (s||'').trim().toLowerCase()
 // HTML escape for anything rendered from history / data.json
 const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-let lastCampAuto = '';        // so we don't clobber a manual edit
-let campsClicks = {};         // campaign -> click count, from data.json
-let campsConversions = {};    // campaign -> sign-up count, from data.json
+let lastCampAuto = '';     // so we don't clobber a manual edit
+let campsClicks = {};      // campaign -> clicks, from data.json
+let campsSigFirst = {};    // campaign -> first-touch sign-ups
+let campsSigLast = {};     // campaign -> last-touch sign-ups
 
 // ---- destination chips ----
 $('destChips').addEventListener('click', e=>{
@@ -272,7 +273,7 @@ function renderHist(){
   if(!h.length){ list.innerHTML='<p class="empty">Links you copy show up here.</p>'; return; }
   list.innerHTML = h.map((x,i)=>{
     const clicks = campsClicks[x.camp];
-    const sig = campsConversions[x.camp];
+    const sig = campsSigFirst[x.camp];  // editorial-friendly: first-touch credit
     const stats = clicks
       ? Number(clicks).toLocaleString() + ' clicks' + (sig ? ' · ' + sig + ' sign-up' + (sig===1?'':'s') : '')
       : '';
@@ -298,11 +299,14 @@ fetch('data.json?cb=' + Date.now())
   .then(r => r.ok ? r.json() : Promise.reject())
   .then(d => {
     const rows = (d.articles || [])
-      .filter(a => a.clicks > 0 || (a.conversions||0) > 0)
-      .sort((a,b)=> b.clicks - a.clicks || (b.conversions||0) - (a.conversions||0));
+      .filter(a => a.clicks > 0 || (a.signups_first||0) > 0 || (a.signups_last||0) > 0)
+      .sort((a,b)=> b.clicks - a.clicks
+                  || (b.signups_first||0) - (a.signups_first||0)
+                  || (b.signups_last||0)  - (a.signups_last||0));
     // Build campaign maps so recent links can show their own counts
-    campsClicks      = Object.fromEntries(rows.map(a => [a.campaign, a.clicks]));
-    campsConversions = Object.fromEntries(rows.map(a => [a.campaign, a.conversions || 0]));
+    campsClicks   = Object.fromEntries(rows.map(a => [a.campaign, a.clicks]));
+    campsSigFirst = Object.fromEntries(rows.map(a => [a.campaign, a.signups_first || 0]));
+    campsSigLast  = Object.fromEntries(rows.map(a => [a.campaign, a.signups_last  || 0]));
     renderHist(); // re-render so existing recent items pick up live counts
     const body = $('perfBody');
     if(!rows.length){
@@ -311,16 +315,28 @@ fetch('data.json?cb=' + Date.now())
     }
     const upd = d.updated ? new Date(d.updated).toLocaleString() : '';
     body.innerHTML =
-      '<table><thead><tr><th>Campaign</th><th class="num">Clicks</th><th class="num">Sign-ups</th><th class="num">CVR</th></tr></thead><tbody>' +
+      '<table><thead><tr>'+
+        '<th>Campaign</th>'+
+        '<th class="num">Clicks</th>'+
+        '<th class="num" title="People whose first click was on this link, who later joined.">Sign-ups (first)</th>'+
+        '<th class="num" title="People who clicked this link just before joining.">Sign-ups (last)</th>'+
+        '<th class="num">CVR</th>'+
+      '</tr></thead><tbody>' +
       rows.map(a => {
-        const sig = Number(a.conversions || 0);
-        const cvr = (a.clicks && sig) ? (Math.round(sig / a.clicks * 1000) / 10) + '%' : '—';
+        const f = Number(a.signups_first || 0);
+        const l = Number(a.signups_last  || 0);
+        const cvr = (a.clicks && f) ? (Math.round(f / a.clicks * 1000) / 10) + '%' : '—';
         return '<tr><td>'+esc(a.campaign)+'</td>'+
                '<td class="num">'+Number(a.clicks).toLocaleString()+'</td>'+
-               '<td class="num">'+(sig ? sig.toLocaleString() : '—')+'</td>'+
+               '<td class="num">'+(f ? f.toLocaleString() : '—')+'</td>'+
+               '<td class="num">'+(l ? l.toLocaleString() : '—')+'</td>'+
                '<td class="num">'+cvr+'</td></tr>';
       }).join('') +
-      '</tbody></table>' + (upd ? '<div class="updated">Updated '+esc(upd)+'</div>' : '');
+      '</tbody></table>' +
+      '<div class="updated">' +
+        '<b>First</b> = clicked this link, eventually joined. <b>Last</b> = clicked this link just before joining. <b>CVR</b> uses first-touch.' +
+        (upd ? '<br>Updated '+esc(upd) : '') +
+      '</div>';
   })
   .catch(()=>{ $('perfBody').innerHTML = '<p class="empty">Stats will appear here once the daily sync runs.</p>'; });
 
