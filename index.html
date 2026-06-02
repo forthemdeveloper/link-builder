@@ -170,6 +170,7 @@
 
   <div class="card history">
     <h2>Recent links <span class="hint">— shared across the team</span></h2>
+    <div id="feedErr" style="display:none;background:var(--poppy);color:#fff;font-family:'Roboto Mono',monospace;font-size:12px;padding:10px 14px;border-radius:8px;margin-bottom:14px"></div>
     <div id="histList"><p class="empty">Loading…</p></div>
   </div>
 
@@ -254,6 +255,13 @@ function build(){
 
 copyBtn.addEventListener('click', async ()=>{
   const link = build(); if(!link) return;
+  if(!who.value){
+    who.focus();
+    copyBtn.textContent='Pick your name first';
+    copyBtn.style.background='var(--poppy)'; copyBtn.style.color='#fff';
+    setTimeout(()=>{ copyBtn.textContent='Copy link'; copyBtn.style.background=''; copyBtn.style.color=''; }, 1800);
+    return;
+  }
   await navigator.clipboard.writeText(link);
   copyBtn.textContent='Copied ✓'; copyBtn.classList.add('copied');
   setTimeout(()=>{ copyBtn.textContent='Copy link'; copyBtn.classList.remove('copied'); }, 1400);
@@ -290,13 +298,25 @@ async function postTeam(link){
   teamLinks.unshift({ ...entry, ts: Math.floor(Date.now()/1000) });
   teamLinks = teamLinks.slice(0, 25);
   renderHist();
+  let ok = false, msg = '';
   try {
-    await fetch(API_BASE + '/links', {
+    const r = await fetch(API_BASE + '/links', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(entry),
     });
-  } catch(e) { /* leave optimistic entry in place */ }
+    ok = r.ok;
+    if(!ok){ try { msg = (await r.json()).error || ('HTTP ' + r.status); } catch(_) { msg = 'HTTP ' + r.status; } }
+  } catch(e) { msg = 'network error — feed unreachable'; }
+  if(!ok){
+    // pull the optimistic entry back out and tell the user what failed
+    teamLinks = teamLinks.filter(x => x.link !== link);
+    renderHist();
+    const note = $('feedErr');
+    note.textContent = "Couldn't save to team feed: " + msg + ". Your link is still copied — try again.";
+    note.style.display = 'block';
+    setTimeout(()=>{ note.style.display = 'none'; }, 6000);
+  }
 }
 
 function renderHist(){
