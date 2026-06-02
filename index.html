@@ -82,11 +82,18 @@
     letter-spacing:.08em;margin-bottom:14px}
   .perf h2 .hint{text-transform:none;letter-spacing:0}
   .perf table{width:100%;border-collapse:collapse;font-size:14px}
-  .perf th,.perf td{text-align:left;padding:9px 6px;border-bottom:1px solid var(--stone)}
+  .perf th,.perf td{text-align:left;padding:9px 6px;border-bottom:1px solid var(--stone);vertical-align:top}
   .perf th{font-family:'Roboto Mono',monospace;font-size:11px;text-transform:uppercase;
     letter-spacing:.06em;color:var(--moss)}
   .perf td.num,.perf th.num{text-align:right;font-family:'Roboto Mono',monospace;font-weight:600}
   .perf tr:last-child td{border-bottom:none}
+  .perf .who-badge{display:inline-block;font-family:'Roboto Mono',monospace;font-size:10px;font-weight:600;
+    text-transform:uppercase;letter-spacing:.06em;background:var(--black);color:var(--grass);
+    padding:2px 7px;border-radius:4px}
+  .perf .who-badge.unk{background:var(--stone2);color:var(--white)}
+  .perf .camp{font-weight:600}
+  .perf .dest{font-family:'Roboto Mono',monospace;font-size:11px;color:var(--moss);
+    margin-top:2px;word-break:break-all}
   .perf .updated{font-family:'Roboto Mono',monospace;font-size:11px;color:var(--stone2);margin-top:14px}
   footer{text-align:center;font-family:'Roboto Mono',monospace;font-size:11px;
     color:var(--moss);margin-top:8px}
@@ -190,9 +197,11 @@ const slug = s => (s||'').trim().toLowerCase()
 const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 let lastCampAuto = '';     // so we don't clobber a manual edit
-let campsClicks = {};      // campaign -> clicks, from data.json
-let campsSigFirst = {};    // campaign -> first-touch sign-ups
-let campsSigLast = {};     // campaign -> last-touch sign-ups
+// Maps keyed by "campaign|who" (both lowercased) so per-person credit is precise
+let campsClicks = {};
+let campsSigFirst = {};
+let campsSigLast = {};
+const keyFor = (c, w) => (c||'').toLowerCase() + '|' + (w||'').toLowerCase();
 
 // ---- destination chips ----
 $('destChips').addEventListener('click', e=>{
@@ -326,8 +335,9 @@ function renderHist(){
     return;
   }
   list.innerHTML = teamLinks.map((x,i)=>{
-    const clicks = campsClicks[x.camp];
-    const sig = campsSigFirst[x.camp];  // editorial-friendly: first-touch credit
+    const k = keyFor(x.camp, x.who);
+    const clicks = campsClicks[k];
+    const sig = campsSigFirst[k];  // editorial-friendly: first-touch credit
     const stats = clicks
       ? Number(clicks).toLocaleString() + ' clicks' + (sig ? ' · ' + sig + ' sign-up' + (sig===1?'':'s') : '')
       : '';
@@ -356,20 +366,23 @@ fetch('data.json?cb=' + Date.now())
       .sort((a,b)=> b.clicks - a.clicks
                   || (b.signups_first||0) - (a.signups_first||0)
                   || (b.signups_last||0)  - (a.signups_last||0));
-    // Build campaign maps so recent links can show their own counts
-    campsClicks   = Object.fromEntries(rows.map(a => [a.campaign, a.clicks]));
-    campsSigFirst = Object.fromEntries(rows.map(a => [a.campaign, a.signups_first || 0]));
-    campsSigLast  = Object.fromEntries(rows.map(a => [a.campaign, a.signups_last  || 0]));
+    // Build (campaign|who) maps so the Recent links section shows per-person credit
+    campsClicks   = Object.fromEntries(rows.map(a => [keyFor(a.campaign, a.who), a.clicks]));
+    campsSigFirst = Object.fromEntries(rows.map(a => [keyFor(a.campaign, a.who), a.signups_first || 0]));
+    campsSigLast  = Object.fromEntries(rows.map(a => [keyFor(a.campaign, a.who), a.signups_last  || 0]));
     renderHist(); // re-render so existing recent items pick up live counts
     const body = $('perfBody');
     if(!rows.length){
       body.innerHTML = '<p class="empty">No tracked clicks yet — links you build here show up within a day of going live.</p>';
       return;
     }
+    // Strip scheme for compact display
+    const cleanDest = u => (u||'').replace(/^https?:\/\//,'').replace(/\/$/,'') || '—';
     const upd = d.updated ? new Date(d.updated).toLocaleString() : '';
     body.innerHTML =
       '<table><thead><tr>'+
-        '<th>Campaign</th>'+
+        '<th>Who</th>'+
+        '<th>Campaign &amp; destination</th>'+
         '<th class="num">Clicks</th>'+
         '<th class="num" title="People whose first click was on this link, who later joined.">Sign-ups (first)</th>'+
         '<th class="num" title="People who clicked this link just before joining.">Sign-ups (last)</th>'+
@@ -379,11 +392,18 @@ fetch('data.json?cb=' + Date.now())
         const f = Number(a.signups_first || 0);
         const l = Number(a.signups_last  || 0);
         const cvr = (a.clicks && f) ? (Math.round(f / a.clicks * 1000) / 10) + '%' : '—';
-        return '<tr><td>'+esc(a.campaign)+'</td>'+
-               '<td class="num">'+Number(a.clicks).toLocaleString()+'</td>'+
-               '<td class="num">'+(f ? f.toLocaleString() : '—')+'</td>'+
-               '<td class="num">'+(l ? l.toLocaleString() : '—')+'</td>'+
-               '<td class="num">'+cvr+'</td></tr>';
+        const whoBadge = a.who
+          ? '<span class="who-badge">'+esc(a.who)+'</span>'
+          : '<span class="who-badge unk" title="No name was set when this link was built.">?</span>';
+        return '<tr>'+
+                 '<td>'+whoBadge+'</td>'+
+                 '<td><div class="camp">'+esc(a.campaign)+'</div>'+
+                     '<div class="dest">→ '+esc(cleanDest(a.dest))+'</div></td>'+
+                 '<td class="num">'+Number(a.clicks).toLocaleString()+'</td>'+
+                 '<td class="num">'+(f ? f.toLocaleString() : '—')+'</td>'+
+                 '<td class="num">'+(l ? l.toLocaleString() : '—')+'</td>'+
+                 '<td class="num">'+cvr+'</td>'+
+               '</tr>';
       }).join('') +
       '</tbody></table>' +
       '<div class="updated">' +
