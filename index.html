@@ -57,8 +57,9 @@
   .warn{color:var(--poppy);font-family:'Roboto Mono',monospace;font-size:12px;margin-top:-8px;
     margin-bottom:14px;display:none}
   .history h2{font-size:13px;font-family:'Roboto Mono',monospace;text-transform:uppercase;
-    letter-spacing:.08em;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center}
-  .history h2 a{color:var(--poppy);font-size:11px;cursor:pointer;text-decoration:underline}
+    letter-spacing:.08em;margin-bottom:14px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .history h2 .hint{text-transform:none;letter-spacing:0}
+  .hist-ago{font-family:'Roboto Mono',monospace;font-size:11px;color:var(--stone2);margin-left:8px}
   .hist-item{border-top:1px solid var(--stone);padding:12px 0;display:flex;gap:10px;align-items:center}
   .hist-item:first-of-type{border-top:none}
   .hist-meta{flex:1;min-width:0}
@@ -168,8 +169,8 @@
   </div>
 
   <div class="card history">
-    <h2>Recent links</h2>
-    <div id="histList"><p class="empty">Links you copy show up here.</p></div>
+    <h2>Recent links <span class="hint">— shared across the team</span></h2>
+    <div id="histList"><p class="empty">Loading…</p></div>
   </div>
 
   <footer>Built for the editorial team · clean tags = clean reports</footer>
@@ -256,22 +257,55 @@ copyBtn.addEventListener('click', async ()=>{
   await navigator.clipboard.writeText(link);
   copyBtn.textContent='Copied ✓'; copyBtn.classList.add('copied');
   setTimeout(()=>{ copyBtn.textContent='Copy link'; copyBtn.classList.remove('copied'); }, 1400);
-  saveHist(link);
+  postTeam(link);
 });
 
-// ---- history (localStorage) ----
-const KEY = 'ft_utm_history';
-function getHist(){ try{ return JSON.parse(localStorage.getItem(KEY))||[]; }catch(e){ return []; } }
-function saveHist(link){
-  const h = getHist().filter(x=>x.link!==link);
-  h.unshift({ link, camp: camp.value || '(no campaign)', who: who.value || '', when: Date.now() });
-  localStorage.setItem(KEY, JSON.stringify(h.slice(0,12)));
+// ---- team feed: shared across everyone, backed by the VPS API ----
+const API_BASE = 'https://api.forthem.com';
+let teamLinks = [];
+
+function timeAgo(ts){
+  const s = Math.floor(Date.now()/1000 - ts);
+  if(s < 60) return 'just now';
+  if(s < 3600) return Math.floor(s/60) + 'm ago';
+  if(s < 86400) return Math.floor(s/3600) + 'h ago';
+  return Math.floor(s/86400) + 'd ago';
+}
+
+async function loadTeam(){
+  try {
+    const r = await fetch(API_BASE + '/links?cb=' + Date.now());
+    if(!r.ok) throw 0;
+    teamLinks = (await r.json()).links || [];
+  } catch(e) {
+    teamLinks = []; // network down or DNS still propagating
+  }
   renderHist();
 }
+
+async function postTeam(link){
+  const entry = { who: who.value || '', camp: camp.value || '(no campaign)', link };
+  // optimistic: show it immediately so it feels instant
+  teamLinks = teamLinks.filter(x => x.link !== link);
+  teamLinks.unshift({ ...entry, ts: Math.floor(Date.now()/1000) });
+  teamLinks = teamLinks.slice(0, 25);
+  renderHist();
+  try {
+    await fetch(API_BASE + '/links', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(entry),
+    });
+  } catch(e) { /* leave optimistic entry in place */ }
+}
+
 function renderHist(){
-  const h = getHist(), list = $('histList');
-  if(!h.length){ list.innerHTML='<p class="empty">Links you copy show up here.</p>'; return; }
-  list.innerHTML = h.map((x,i)=>{
+  const list = $('histList');
+  if(!teamLinks.length){
+    list.innerHTML = '<p class="empty">No links yet — copy your first one and it\'ll show up here for everyone.</p>';
+    return;
+  }
+  list.innerHTML = teamLinks.map((x,i)=>{
     const clicks = campsClicks[x.camp];
     const sig = campsSigFirst[x.camp];  // editorial-friendly: first-touch credit
     const stats = clicks
@@ -282,12 +316,13 @@ function renderHist(){
         (x.who ? '<span class="hist-who">'+esc(x.who)+'</span>' : '')+
         esc(x.camp)+
         (stats ? '<span class="hist-clicks">'+stats+'</span>' : '')+
+        (x.ts ? '<span class="hist-ago">'+timeAgo(x.ts)+'</span>' : '')+
       '</div>'+
       '<div class="hist-url">'+esc(x.link)+'</div></div>'+
       '<button class="mini" data-i="'+i+'">Copy</button></div>';
   }).join('');
   list.querySelectorAll('.mini').forEach(b=>b.addEventListener('click',async()=>{
-    const link = getHist()[b.dataset.i].link;
+    const link = teamLinks[b.dataset.i].link;
     await navigator.clipboard.writeText(link);
     b.textContent='✓'; setTimeout(()=>b.textContent='Copy',1200);
   }));
@@ -346,7 +381,8 @@ who.addEventListener('change', ()=>{
 });
 
 // init
-syncMode(); renderHist();
+syncMode();
+loadTeam();   // fetch the shared team feed; renders once it arrives
 </script>
 </body>
 </html>
