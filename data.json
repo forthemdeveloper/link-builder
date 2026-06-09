@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-08T13:27:29Z",
+  "updated": "2026-06-09T13:27:31Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 571,
+      "clicks": 621,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 114,
+      "clicks": 143,
       "signups_first": 0,
       "signups_last": 0
     }
