@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-14T13:27:23Z",
+  "updated": "2026-06-15T13:27:27Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 890,
+      "clicks": 948,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -14,7 +14,15 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 284,
+      "clicks": 297,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": null,
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@032da393w19368061p0cc732e2m671615c3/custom/web-pixel-260866214@1/sandbox/modern/collections/print-issues-1",
+      "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
     }
