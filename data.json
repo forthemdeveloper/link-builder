@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-31T13:27:20Z",
+  "updated": "2026-08-01T13:27:18Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3128,
+      "clicks": 3200,
       "signups_first": 0,
       "signups_last": 1
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1004,
+      "clicks": 1021,
       "signups_first": 2,
       "signups_last": 4
     },
@@ -22,15 +22,15 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 74,
-      "signups_first": 6,
-      "signups_last": 8
+      "clicks": 83,
+      "signups_first": 7,
+      "signups_last": 9
     },
     {
       "campaign": null,
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 63,
+      "clicks": 69,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -38,9 +38,9 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 44,
-      "signups_first": 2,
-      "signups_last": 3
+      "clicks": 51,
+      "signups_first": 3,
+      "signups_last": 4
     },
     {
       "campaign": "intro-post",
@@ -63,6 +63,14 @@
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
       "clicks": 5,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "autostraddle-print-magazine-issue-02-food",
+      "who": "riese",
+      "dest": "https://forthem.com/web-pixels@6392291bw48edd0b4p524860cam091f7eea/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
+      "clicks": 4,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -107,9 +115,9 @@
       "signups_last": 0
     },
     {
-      "campaign": "autostraddle-print-magazine-issue-02-food",
-      "who": "riese",
-      "dest": "https://forthem.com/web-pixels@6392291bw48edd0b4p524860cam091f7eea/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
+      "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 2,
       "signups_first": 0,
       "signups_last": 0
