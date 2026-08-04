@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-03T13:27:24Z",
+  "updated": "2026-08-04T13:27:32Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3316,
+      "clicks": 3375,
       "signups_first": 0,
       "signups_last": 1
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1079,
+      "clicks": 1104,
       "signups_first": 9,
       "signups_last": 10
     },
@@ -22,7 +22,7 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 89,
+      "clicks": 92,
       "signups_first": 7,
       "signups_last": 9
     },
@@ -30,7 +30,7 @@
       "campaign": null,
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 72,
+      "clicks": 76,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -38,7 +38,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 58,
+      "clicks": 64,
       "signups_first": 4,
       "signups_last": 5
     },
@@ -67,6 +67,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
+      "clicks": 5,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "igstory",
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
@@ -86,14 +94,6 @@
       "campaign": "egg-freezing",
       "who": "kylo",
       "dest": "https://zinemedia.forthem.com/from-kylo/",
-      "clicks": 4,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 4,
       "signups_first": 0,
       "signups_last": 0
