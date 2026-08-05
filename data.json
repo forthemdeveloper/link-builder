@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-04T13:27:32Z",
+  "updated": "2026-08-05T13:27:30Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3375,
+      "clicks": 3418,
       "signups_first": 0,
       "signups_last": 1
     },
@@ -14,16 +14,16 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1104,
-      "signups_first": 9,
-      "signups_last": 10
+      "clicks": 1138,
+      "signups_first": 10,
+      "signups_last": 11
     },
     {
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 92,
-      "signups_first": 7,
+      "clicks": 101,
+      "signups_first": 8,
       "signups_last": 9
     },
     {
@@ -38,7 +38,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 64,
+      "clicks": 69,
       "signups_first": 4,
       "signups_last": 5
     },
@@ -55,6 +55,14 @@
       "who": "riese",
       "dest": "https://zine-subscription.forthem.com/",
       "clicks": 6,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "baseball-interview",
+      "who": "riese",
+      "dest": "https://zinemedia.forthem.com/issue-03/",
+      "clicks": 5,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -107,14 +115,6 @@
       "signups_last": 0
     },
     {
-      "campaign": "baseball-interview",
-      "who": "riese",
-      "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 3,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "anamnesis-t-kira-mahealani-madden",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@4074779awe500cddcp1e53a49dm5f7c656e/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
@@ -126,6 +126,14 @@
       "campaign": null,
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@032da393w19368061p0cc732e2m671615c3/custom/web-pixel-260866214@1/sandbox/modern/collections/print-issues-1",
+      "clicks": 1,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "our-most-anticipated-queer-books-for-august-2026",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@68e92515we879d2d3p3d676273me254541c/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
