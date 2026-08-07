@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-06T13:27:29Z",
+  "updated": "2026-08-07T13:27:34Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3456,
+      "clicks": 3505,
       "signups_first": 0,
       "signups_last": 1
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1171,
+      "clicks": 1206,
       "signups_first": 10,
       "signups_last": 11
     },
@@ -22,15 +22,15 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 105,
-      "signups_first": 8,
-      "signups_last": 9
+      "clicks": 108,
+      "signups_first": 10,
+      "signups_last": 11
     },
     {
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 76,
+      "clicks": 84,
       "signups_first": 4,
       "signups_last": 5
     },
@@ -126,6 +126,14 @@
       "campaign": "anamnesis-t-kira-mahealani-madden",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@4074779awe500cddcp1e53a49dm5f7c656e/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 2,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "deadlifting-our-way-to-a-more-inclusive-strength-sports-world",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@b8c7ab0dwe991d1bdp4baaeba4m84fbe7b7/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 2,
       "signups_first": 0,
       "signups_last": 0
