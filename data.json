@@ -1,28 +1,28 @@
 {
-  "updated": "2026-08-07T13:27:34Z",
+  "updated": "2026-08-08T13:27:34Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3505,
-      "signups_first": 0,
-      "signups_last": 1
+      "clicks": 3553,
+      "signups_first": 3,
+      "signups_last": 4
     },
     {
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1206,
-      "signups_first": 10,
-      "signups_last": 11
+      "clicks": 1235,
+      "signups_first": 11,
+      "signups_last": 12
     },
     {
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 108,
+      "clicks": 109,
       "signups_first": 10,
       "signups_last": 11
     },
@@ -30,7 +30,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 84,
+      "clicks": 87,
       "signups_first": 4,
       "signups_last": 5
     },
@@ -38,7 +38,7 @@
       "campaign": null,
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 76,
+      "clicks": 79,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -47,6 +47,14 @@
       "who": "riese",
       "dest": "https://zine-subscription.forthem.com/",
       "clicks": 16,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "baseball-interview",
+      "who": "riese",
+      "dest": "https://zinemedia.forthem.com/issue-03/",
+      "clicks": 8,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -63,14 +71,6 @@
       "who": "riese",
       "dest": "https://zine-subscription.forthem.com/",
       "clicks": 6,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "baseball-interview",
-      "who": "riese",
-      "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 5,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -115,6 +115,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "deadlifting-our-way-to-a-more-inclusive-strength-sports-world",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@b8c7ab0dwe991d1bdp4baaeba4m84fbe7b7/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
+      "clicks": 3,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "our-most-anticipated-queer-books-for-august-2026",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@68e92515we879d2d3p3d676273me254541c/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
@@ -126,14 +134,6 @@
       "campaign": "anamnesis-t-kira-mahealani-madden",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@4074779awe500cddcp1e53a49dm5f7c656e/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 2,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "deadlifting-our-way-to-a-more-inclusive-strength-sports-world",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@b8c7ab0dwe991d1bdp4baaeba4m84fbe7b7/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 2,
       "signups_first": 0,
       "signups_last": 0
