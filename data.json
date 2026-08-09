@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-08T13:27:34Z",
+  "updated": "2026-08-09T13:27:29Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3553,
+      "clicks": 3626,
       "signups_first": 3,
       "signups_last": 4
     },
@@ -14,15 +14,15 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1235,
-      "signups_first": 11,
-      "signups_last": 12
+      "clicks": 1249,
+      "signups_first": 13,
+      "signups_last": 14
     },
     {
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 109,
+      "clicks": 111,
       "signups_first": 10,
       "signups_last": 11
     },
@@ -30,7 +30,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 87,
+      "clicks": 92,
       "signups_first": 4,
       "signups_last": 5
     },
@@ -107,6 +107,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "our-most-anticipated-queer-books-for-august-2026",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@68e92515we879d2d3p3d676273me254541c/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
+      "clicks": 4,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "our-most-anticipated-queer-books-for-july-2026",
       "who": "kayla",
       "dest": "https://zine-subscription.forthem.com/",
@@ -118,14 +126,6 @@
       "campaign": "deadlifting-our-way-to-a-more-inclusive-strength-sports-world",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@b8c7ab0dwe991d1bdp4baaeba4m84fbe7b7/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
-      "clicks": 3,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "our-most-anticipated-queer-books-for-august-2026",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@68e92515we879d2d3p3d676273me254541c/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 3,
       "signups_first": 0,
       "signups_last": 0
