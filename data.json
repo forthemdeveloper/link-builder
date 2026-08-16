@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-15T13:27:33Z",
+  "updated": "2026-08-16T13:27:26Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3908,
+      "clicks": 3944,
       "signups_first": 3,
       "signups_last": 4
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1393,
+      "clicks": 1413,
       "signups_first": 21,
       "signups_last": 21
     },
@@ -22,7 +22,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 140,
+      "clicks": 143,
       "signups_first": 5,
       "signups_last": 8
     },
@@ -38,7 +38,7 @@
       "campaign": null,
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 120,
+      "clicks": 122,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -67,6 +67,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "we-all-have-a-hunger",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 8,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "deadlifting-our-way-to-a-more-inclusive-strength-sports-world",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@b8c7ab0dwe991d1bdp4baaeba4m84fbe7b7/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
@@ -75,11 +83,11 @@
       "signups_last": 0
     },
     {
-      "campaign": "we-all-have-a-hunger",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 7,
-      "signups_first": 0,
+      "campaign": "autostraddle-print-magazine-issue-02-food",
+      "who": "riese",
+      "dest": "https://forthem.com/web-pixels@6392291bw48edd0b4p524860cam091f7eea/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
+      "clicks": 6,
+      "signups_first": 1,
       "signups_last": 0
     },
     {
@@ -88,14 +96,6 @@
       "dest": "https://zine-subscription.forthem.com/",
       "clicks": 6,
       "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "autostraddle-print-magazine-issue-02-food",
-      "who": "riese",
-      "dest": "https://forthem.com/web-pixels@6392291bw48edd0b4p524860cam091f7eea/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
-      "clicks": 5,
-      "signups_first": 1,
       "signups_last": 0
     },
     {
@@ -139,17 +139,17 @@
       "signups_last": 0
     },
     {
-      "campaign": null,
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@032da393w19368061p0cc732e2m671615c3/custom/web-pixel-260866214@1/sandbox/modern/collections/print-issues-1",
-      "clicks": 2,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "anamnesis-t-kira-mahealani-madden",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@4074779awe500cddcp1e53a49dm5f7c656e/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 2,
+      "signups_first": 1,
+      "signups_last": 0
+    },
+    {
+      "campaign": null,
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@032da393w19368061p0cc732e2m671615c3/custom/web-pixel-260866214@1/sandbox/modern/collections/print-issues-1",
       "clicks": 2,
       "signups_first": 0,
       "signups_last": 0
@@ -159,7 +159,7 @@
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNFTgBRgOSldc6LoMFF512P/en-us/information",
       "clicks": 1,
-      "signups_first": 0,
+      "signups_first": 1,
       "signups_last": 0
     }
   ]
