@@ -1,20 +1,20 @@
 {
-  "updated": "2026-08-16T13:27:26Z",
+  "updated": "2026-08-17T13:27:31Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3944,
+      "clicks": 3997,
       "signups_first": 3,
-      "signups_last": 4
+      "signups_last": 5
     },
     {
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1413,
+      "clicks": 1426,
       "signups_first": 21,
       "signups_last": 21
     },
@@ -22,7 +22,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 143,
+      "clicks": 155,
       "signups_first": 5,
       "signups_last": 8
     },
@@ -160,6 +160,14 @@
       "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNFTgBRgOSldc6LoMFF512P/en-us/information",
       "clicks": 1,
       "signups_first": 1,
+      "signups_last": 0
+    },
+    {
+      "campaign": "mag-subscription-asmenu",
+      "who": "riese",
+      "dest": "https://zinemedia.forthem.com/issue-03/",
+      "clicks": 1,
+      "signups_first": 0,
       "signups_last": 0
     }
   ]
