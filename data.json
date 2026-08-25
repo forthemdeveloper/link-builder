@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-24T13:27:25Z",
+  "updated": "2026-08-25T13:27:28Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4326,
+      "clicks": 4381,
       "signups_first": 3,
       "signups_last": 4
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1567,
+      "clicks": 1597,
       "signups_first": 22,
       "signups_last": 23
     },
@@ -22,7 +22,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 188,
+      "clicks": 194,
       "signups_first": 6,
       "signups_last": 10
     },
@@ -30,7 +30,7 @@
       "campaign": null,
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 128,
+      "clicks": 129,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -38,7 +38,7 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 125,
+      "clicks": 127,
       "signups_first": 10,
       "signups_last": 11
     },
