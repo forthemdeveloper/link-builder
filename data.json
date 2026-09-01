@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-31T13:27:32Z",
+  "updated": "2026-09-01T13:27:29Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4660,
+      "clicks": 4380,
       "signups_first": 4,
       "signups_last": 5
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1738,
+      "clicks": 1744,
       "signups_first": 26,
       "signups_last": 26
     },
@@ -22,7 +22,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 220,
+      "clicks": 225,
       "signups_first": 8,
       "signups_last": 11
     },
@@ -46,7 +46,7 @@
       "campaign": "autostraddle-print-magazine-issue-02-food",
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@6392291bw48edd0b4p524860cam091f7eea/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
-      "clicks": 19,
+      "clicks": 20,
       "signups_first": 1,
       "signups_last": 2
     },
