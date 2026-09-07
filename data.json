@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-06T13:27:24Z",
+  "updated": "2026-09-07T13:27:21Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4357,
+      "clicks": 4355,
       "signups_first": 5,
       "signups_last": 6
     },
@@ -14,17 +14,25 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1742,
+      "clicks": 1724,
       "signups_first": 27,
-      "signups_last": 27
+      "signups_last": 28
     },
     {
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 252,
+      "clicks": 256,
       "signups_first": 10,
       "signups_last": 12
+    },
+    {
+      "campaign": null,
+      "who": "riese",
+      "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
+      "clicks": 138,
+      "signups_first": 0,
+      "signups_last": 0
     },
     {
       "campaign": "welcome-to-the-sports-issue",
@@ -33,14 +41,6 @@
       "clicks": 137,
       "signups_first": 11,
       "signups_last": 12
-    },
-    {
-      "campaign": null,
-      "who": "riese",
-      "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 137,
-      "signups_first": 0,
-      "signups_last": 0
     },
     {
       "campaign": "autostraddle-print-magazine-issue-02-food",
@@ -147,17 +147,17 @@
       "signups_last": 0
     },
     {
-      "campaign": "anamnesis-t-kira-mahealani-madden",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@4074779awe500cddcp1e53a49dm5f7c656e/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 2,
-      "signups_first": 1,
-      "signups_last": 0
-    },
-    {
       "campaign": "issue03-launch",
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNFTgBRgOSldc6LoMFF512P/en-us/information",
+      "clicks": 2,
+      "signups_first": 2,
+      "signups_last": 1
+    },
+    {
+      "campaign": "anamnesis-t-kira-mahealani-madden",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@4074779awe500cddcp1e53a49dm5f7c656e/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
       "clicks": 2,
       "signups_first": 1,
       "signups_last": 0
