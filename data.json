@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-07T13:27:21Z",
+  "updated": "2026-09-08T13:27:28Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4355,
+      "clicks": 4348,
       "signups_first": 5,
       "signups_last": 6
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1724,
+      "clicks": 1728,
       "signups_first": 27,
       "signups_last": 28
     },
@@ -22,8 +22,16 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 256,
+      "clicks": 260,
       "signups_first": 10,
+      "signups_last": 12
+    },
+    {
+      "campaign": "welcome-to-the-sports-issue",
+      "who": "riese",
+      "dest": "https://zinemedia.forthem.com/issue-03/",
+      "clicks": 138,
+      "signups_first": 11,
       "signups_last": 12
     },
     {
@@ -33,14 +41,6 @@
       "clicks": 138,
       "signups_first": 0,
       "signups_last": 0
-    },
-    {
-      "campaign": "welcome-to-the-sports-issue",
-      "who": "riese",
-      "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 137,
-      "signups_first": 11,
-      "signups_last": 12
     },
     {
       "campaign": "autostraddle-print-magazine-issue-02-food",
