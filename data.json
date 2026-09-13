@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-11T13:27:22Z",
+  "updated": "2026-09-13T13:27:27Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4335,
+      "clicks": 4310,
       "signups_first": 5,
       "signups_last": 6
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1675,
+      "clicks": 1670,
       "signups_first": 30,
       "signups_last": 31
     },
@@ -22,15 +22,15 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 282,
+      "clicks": 284,
       "signups_first": 11,
-      "signups_last": 12
+      "signups_last": 13
     },
     {
       "campaign": null,
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 140,
+      "clicks": 142,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -147,6 +147,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "queerleader",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@80079e4cw22952a98p55856082md4f1b6b4/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
+      "clicks": 3,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "issue03-launch",
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNFTgBRgOSldc6LoMFF512P/en-us/information",
@@ -165,16 +173,8 @@
     {
       "campaign": null,
       "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@032da393w19368061p0cc732e2m671615c3/custom/web-pixel-260866214@1/sandbox/modern/collections/print-issues-1",
-      "clicks": 2,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "queerleader",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@80079e4cw22952a98p55856082md4f1b6b4/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
-      "clicks": 2,
+      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/products/af-membership",
+      "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
     },
