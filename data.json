@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T13:27:30Z",
+  "updated": "2026-09-22T13:27:24Z",
   "window_days": 90,
   "articles": [
     {
@@ -14,17 +14,17 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1658,
-      "signups_first": 32,
+      "clicks": 1659,
+      "signups_first": 33,
       "signups_last": 35
     },
     {
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 299,
-      "signups_first": 12,
-      "signups_last": 13
+      "clicks": 309,
+      "signups_first": 13,
+      "signups_last": 14
     },
     {
       "campaign": null,
@@ -168,6 +168,14 @@
       "dest": "https://forthem.com/web-pixels@4074779awe500cddcp1e53a49dm5f7c656e/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
       "clicks": 2,
       "signups_first": 1,
+      "signups_last": 0
+    },
+    {
+      "campaign": "photoessay-nigerias-first-pride-playoffs",
+      "who": "kayla",
+      "dest": "https://zine-subscription.forthem.com/",
+      "clicks": 2,
+      "signups_first": 0,
       "signups_last": 0
     },
     {
