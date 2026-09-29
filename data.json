@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-28T13:27:26Z",
+  "updated": "2026-09-29T13:27:26Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4286,
+      "clicks": 4298,
       "signups_first": 5,
       "signups_last": 6
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1685,
+      "clicks": 1690,
       "signups_first": 38,
       "signups_last": 41
     },
@@ -22,7 +22,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 333,
+      "clicks": 334,
       "signups_first": 16,
       "signups_last": 16
     },
@@ -126,6 +126,14 @@
       "campaign": "igstory",
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
+      "clicks": 5,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "the-girl-who-became-king-melissa-king-excerpt",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@0d319e54w931ec220p4bfd7e84m89966517/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
       "clicks": 5,
       "signups_first": 0,
       "signups_last": 0
