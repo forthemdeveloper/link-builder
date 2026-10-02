@@ -1,30 +1,30 @@
 {
-  "updated": "2026-09-29T13:27:26Z",
+  "updated": "2026-10-02T13:27:31Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4298,
-      "signups_first": 5,
+      "clicks": 4314,
+      "signups_first": 6,
       "signups_last": 6
     },
     {
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1690,
-      "signups_first": 38,
-      "signups_last": 41
+      "clicks": 1709,
+      "signups_first": 39,
+      "signups_last": 43
     },
     {
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 334,
-      "signups_first": 16,
-      "signups_last": 16
+      "clicks": 337,
+      "signups_first": 17,
+      "signups_last": 17
     },
     {
       "campaign": null,
@@ -38,7 +38,7 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 145,
+      "clicks": 146,
       "signups_first": 11,
       "signups_last": 12
     },
@@ -91,6 +91,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "the-girl-who-became-king-melissa-king-excerpt",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@0d319e54w931ec220p4bfd7e84m89966517/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 7,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "melissa-king-autostraddle-magazine-interview",
       "who": "riese",
       "dest": "https://zine-subscription.forthem.com/",
@@ -131,14 +139,6 @@
       "signups_last": 0
     },
     {
-      "campaign": "the-girl-who-became-king-melissa-king-excerpt",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@0d319e54w931ec220p4bfd7e84m89966517/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 5,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "our-most-anticipated-queer-books-for-july-2026",
       "who": "kayla",
       "dest": "https://zine-subscription.forthem.com/",
@@ -171,11 +171,11 @@
       "signups_last": 1
     },
     {
-      "campaign": "anamnesis-t-kira-mahealani-madden",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@4074779awe500cddcp1e53a49dm5f7c656e/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "campaign": "issue03",
+      "who": "emily",
+      "dest": "https://zine-subscription.forthem.com/",
       "clicks": 2,
-      "signups_first": 1,
+      "signups_first": 0,
       "signups_last": 0
     },
     {
@@ -192,6 +192,14 @@
       "dest": "https://zine-subscription.forthem.com/",
       "clicks": 2,
       "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "anamnesis-t-kira-mahealani-madden",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 1,
+      "signups_first": 1,
       "signups_last": 0
     },
     {
