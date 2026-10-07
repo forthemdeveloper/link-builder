@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-06T13:27:27Z",
+  "updated": "2026-10-07T13:27:31Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4386,
+      "clicks": 4372,
       "signups_first": 6,
       "signups_last": 6
     },
@@ -14,15 +14,15 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1719,
+      "clicks": 1717,
       "signups_first": 40,
-      "signups_last": 44
+      "signups_last": 45
     },
     {
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 353,
+      "clicks": 354,
       "signups_first": 17,
       "signups_last": 18
     },
@@ -139,6 +139,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "homepage",
+      "who": "em",
+      "dest": "https://zinemedia.forthem.com/issue-03/",
+      "clicks": 5,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "igstory",
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
@@ -147,16 +155,16 @@
       "signups_last": 0
     },
     {
-      "campaign": "our-most-anticipated-queer-books-for-july-2026",
-      "who": "kayla",
+      "campaign": "issue03",
+      "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
       "clicks": 4,
       "signups_first": 0,
       "signups_last": 0
     },
     {
-      "campaign": "issue03",
-      "who": "emily",
+      "campaign": "our-most-anticipated-queer-books-for-july-2026",
+      "who": "kayla",
       "dest": "https://zine-subscription.forthem.com/",
       "clicks": 3,
       "signups_first": 0,
@@ -222,14 +230,6 @@
       "campaign": "autostraddle-site",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 1,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "homepage",
-      "who": "em",
-      "dest": "https://zinemedia.forthem.com/issue-03/",
       "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
