@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-07T13:27:31Z",
+  "updated": "2026-10-10T13:27:29Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4372,
+      "clicks": 4382,
       "signups_first": 6,
       "signups_last": 6
     },
@@ -14,15 +14,15 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1717,
-      "signups_first": 40,
-      "signups_last": 45
+      "clicks": 1714,
+      "signups_first": 41,
+      "signups_last": 46
     },
     {
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 354,
+      "clicks": 362,
       "signups_first": 17,
       "signups_last": 18
     },
@@ -31,7 +31,7 @@
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
       "clicks": 148,
-      "signups_first": 11,
+      "signups_first": 12,
       "signups_last": 12
     },
     {
@@ -49,6 +49,14 @@
       "clicks": 26,
       "signups_first": 1,
       "signups_last": 3
+    },
+    {
+      "campaign": "homepage",
+      "who": "em",
+      "dest": "https://zinemedia.forthem.com/issue-03/",
+      "clicks": 23,
+      "signups_first": 0,
+      "signups_last": 0
     },
     {
       "campaign": "intro-post",
@@ -99,6 +107,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "egg-freezing",
+      "who": "kylo",
+      "dest": "https://zinemedia.forthem.com/from-kylo/",
+      "clicks": 6,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "melissa-king-autostraddle-magazine-interview",
       "who": "riese",
       "dest": "https://zine-subscription.forthem.com/",
@@ -123,25 +139,9 @@
       "signups_last": 0
     },
     {
-      "campaign": "egg-freezing",
-      "who": "kylo",
-      "dest": "https://zinemedia.forthem.com/from-kylo/",
-      "clicks": 5,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "history-of-lesbian-softball",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@027c20d5w154ab788p53b8a3a3maf518783/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
-      "clicks": 5,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "homepage",
-      "who": "em",
-      "dest": "https://zinemedia.forthem.com/issue-03/",
       "clicks": 5,
       "signups_first": 0,
       "signups_last": 0
@@ -163,14 +163,6 @@
       "signups_last": 0
     },
     {
-      "campaign": "our-most-anticipated-queer-books-for-july-2026",
-      "who": "kayla",
-      "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "queerleader",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@80079e4cw22952a98p55856082md4f1b6b4/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
@@ -185,6 +177,14 @@
       "clicks": 2,
       "signups_first": 2,
       "signups_last": 1
+    },
+    {
+      "campaign": "autostraddle-site",
+      "who": "motti",
+      "dest": "https://zinemedia.forthem.com/",
+      "clicks": 2,
+      "signups_first": 0,
+      "signups_last": 0
     },
     {
       "campaign": "megan-stalter-at-the-emmys",
@@ -227,17 +227,17 @@
       "signups_last": 0
     },
     {
-      "campaign": "autostraddle-site",
-      "who": "motti",
-      "dest": "https://zinemedia.forthem.com/",
+      "campaign": "mag-subscription-asmenu",
+      "who": "riese",
+      "dest": "https://zinemedia.forthem.com/issue-03/",
       "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
     },
     {
-      "campaign": "mag-subscription-asmenu",
-      "who": "riese",
-      "dest": "https://zinemedia.forthem.com/issue-03/",
+      "campaign": "our-most-anticipated-queer-books-for-july-2026",
+      "who": "kayla",
+      "dest": "https://zine-subscription.forthem.com/",
       "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
