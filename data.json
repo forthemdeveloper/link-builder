@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-11T13:27:27Z",
+  "updated": "2026-10-12T13:27:33Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4367,
+      "clicks": 4357,
       "signups_first": 6,
       "signups_last": 6
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1700,
+      "clicks": 1695,
       "signups_first": 41,
       "signups_last": 46
     },
@@ -22,9 +22,9 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 364,
-      "signups_first": 18,
-      "signups_last": 19
+      "clicks": 370,
+      "signups_first": 20,
+      "signups_last": 21
     },
     {
       "campaign": "welcome-to-the-sports-issue",
@@ -46,7 +46,7 @@
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 28,
+      "clicks": 38,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -54,7 +54,7 @@
       "campaign": "autostraddle-print-magazine-issue-02-food",
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@6392291bw48edd0b4p524860cam091f7eea/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
-      "clicks": 26,
+      "clicks": 27,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -147,14 +147,6 @@
       "signups_last": 0
     },
     {
-      "campaign": "igstory",
-      "who": "emily",
-      "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 5,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "issue03",
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
@@ -230,14 +222,6 @@
       "campaign": "mag-subscription-asmenu",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 1,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "our-most-anticipated-queer-books-for-july-2026",
-      "who": "kayla",
-      "dest": "https://zine-subscription.forthem.com/",
       "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
