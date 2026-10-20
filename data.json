@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-14T13:27:34Z",
+  "updated": "2026-10-20T13:27:36Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4296,
+      "clicks": 4034,
       "signups_first": 6,
       "signups_last": 6
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1670,
+      "clicks": 1664,
       "signups_first": 41,
       "signups_last": 46
     },
@@ -22,15 +22,23 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 377,
-      "signups_first": 20,
-      "signups_last": 21
+      "clicks": 403,
+      "signups_first": 23,
+      "signups_last": 23
+    },
+    {
+      "campaign": "issue03",
+      "who": "motti",
+      "dest": "https://zinemedia.forthem.com/",
+      "clicks": 249,
+      "signups_first": 0,
+      "signups_last": 1
     },
     {
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 149,
+      "clicks": 153,
       "signups_first": 12,
       "signups_last": 12
     },
@@ -46,24 +54,16 @@
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 54,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "issue03",
-      "who": "motti",
-      "dest": "https://zinemedia.forthem.com/",
-      "clicks": 45,
-      "signups_first": 0,
-      "signups_last": 0
+      "clicks": 116,
+      "signups_first": 2,
+      "signups_last": 3
     },
     {
       "campaign": "autostraddle-print-magazine-issue-02-food",
       "who": "riese",
-      "dest": "https://forthem.com/web-pixels@6392291bw48edd0b4p524860cam091f7eea/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
-      "clicks": 27,
-      "signups_first": 1,
+      "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
+      "clicks": 30,
+      "signups_first": 2,
       "signups_last": 3
     },
     {
@@ -115,14 +115,6 @@
       "signups_last": 0
     },
     {
-      "campaign": "egg-freezing",
-      "who": "kylo",
-      "dest": "https://zinemedia.forthem.com/from-kylo/",
-      "clicks": 6,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "our-most-anticipated-queer-books-for-august-2026",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@68e92515we879d2d3p3d676273me254541c/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
@@ -150,15 +142,7 @@
       "campaign": "issue03",
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "melissa-king-autostraddle-magazine-interview",
-      "who": "riese",
-      "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 4,
+      "clicks": 5,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -182,6 +166,14 @@
       "campaign": "autostraddle-site",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
+      "clicks": 2,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "egg-freezing",
+      "who": "kylo",
+      "dest": "https://forthem.com/web-pixels@0dfa916bwdc8841d5pf9ea94c2m0a5bcf0f/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNGNWa2rjWhyUHIIX3c3nbc/en-us/information",
       "clicks": 2,
       "signups_first": 0,
       "signups_last": 0
