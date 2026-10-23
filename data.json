@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-22T13:27:25Z",
+  "updated": "2026-10-23T13:27:20Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3974,
+      "clicks": 3937,
       "signups_first": 6,
       "signups_last": 6
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1653,
+      "clicks": 1650,
       "signups_first": 41,
       "signups_last": 46
     },
@@ -22,7 +22,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 404,
+      "clicks": 405,
       "signups_first": 23,
       "signups_last": 23
     },
@@ -30,17 +30,17 @@
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 313,
+      "clicks": 343,
       "signups_first": 1,
       "signups_last": 3
     },
     {
-      "campaign": "welcome-to-the-sports-issue",
-      "who": "riese",
+      "campaign": "homepage",
+      "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 153,
-      "signups_first": 12,
-      "signups_last": 12
+      "clicks": 154,
+      "signups_first": 4,
+      "signups_last": 5
     },
     {
       "campaign": null,
@@ -51,18 +51,18 @@
       "signups_last": 0
     },
     {
-      "campaign": "homepage",
-      "who": "em",
+      "campaign": "welcome-to-the-sports-issue",
+      "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 140,
-      "signups_first": 3,
-      "signups_last": 4
+      "clicks": 142,
+      "signups_first": 12,
+      "signups_last": 12
     },
     {
       "campaign": "autostraddle-print-magazine-issue-02-food",
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
-      "clicks": 30,
+      "clicks": 31,
       "signups_first": 2,
       "signups_last": 3
     },
@@ -70,7 +70,7 @@
       "campaign": "intro-post",
       "who": "riese",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 18,
+      "clicks": 15,
       "signups_first": 0,
       "signups_last": 0
     },
