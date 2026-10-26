@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-25T13:27:17Z",
+  "updated": "2026-10-26T13:27:20Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3814,
+      "clicks": 3758,
       "signups_first": 6,
       "signups_last": 6
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1647,
+      "clicks": 1623,
       "signups_first": 41,
       "signups_last": 47
     },
@@ -22,7 +22,7 @@
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 400,
+      "clicks": 428,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -30,15 +30,15 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 399,
-      "signups_first": 23,
-      "signups_last": 23
+      "clicks": 377,
+      "signups_first": 22,
+      "signups_last": 22
     },
     {
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 177,
+      "clicks": 179,
       "signups_first": 5,
       "signups_last": 7
     },
@@ -46,7 +46,7 @@
       "campaign": null,
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 135,
+      "clicks": 103,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -54,7 +54,7 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 98,
+      "clicks": 95,
       "signups_first": 8,
       "signups_last": 8
     },
@@ -65,14 +65,6 @@
       "clicks": 33,
       "signups_first": 2,
       "signups_last": 3
-    },
-    {
-      "campaign": "intro-post",
-      "who": "riese",
-      "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 11,
-      "signups_first": 0,
-      "signups_last": 0
     },
     {
       "campaign": "the-girl-who-became-king-melissa-king-excerpt",
@@ -94,6 +86,14 @@
       "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
+      "clicks": 8,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "intro-post",
+      "who": "riese",
+      "dest": "https://zine-subscription.forthem.com/",
       "clicks": 8,
       "signups_first": 0,
       "signups_last": 0
@@ -147,20 +147,20 @@
       "signups_last": 0
     },
     {
+      "campaign": "issue03-launch",
+      "who": "riese",
+      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNFTgBRgOSldc6LoMFF512P/en-us/information",
+      "clicks": 3,
+      "signups_first": 2,
+      "signups_last": 1
+    },
+    {
       "campaign": "queerleader",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@80079e4cw22952a98p55856082md4f1b6b4/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 3,
       "signups_first": 0,
       "signups_last": 0
-    },
-    {
-      "campaign": "issue03-launch",
-      "who": "riese",
-      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNFTgBRgOSldc6LoMFF512P/en-us/information",
-      "clicks": 2,
-      "signups_first": 2,
-      "signups_last": 1
     },
     {
       "campaign": "autostraddle-site",
