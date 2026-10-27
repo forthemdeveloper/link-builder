@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-26T13:27:20Z",
+  "updated": "2026-10-27T13:27:18Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3758,
+      "clicks": 3684,
       "signups_first": 6,
       "signups_last": 6
     },
@@ -14,15 +14,15 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1623,
-      "signups_first": 41,
-      "signups_last": 47
+      "clicks": 1614,
+      "signups_first": 42,
+      "signups_last": 48
     },
     {
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 428,
+      "clicks": 456,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -30,23 +30,23 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 377,
-      "signups_first": 22,
-      "signups_last": 22
+      "clicks": 371,
+      "signups_first": 21,
+      "signups_last": 20
     },
     {
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 179,
+      "clicks": 191,
       "signups_first": 5,
       "signups_last": 7
     },
     {
       "campaign": null,
       "who": "riese",
-      "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 103,
+      "dest": "https://forthem.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
+      "clicks": 90,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -54,17 +54,17 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 95,
-      "signups_first": 8,
-      "signups_last": 8
+      "clicks": 85,
+      "signups_first": 6,
+      "signups_last": 5
     },
     {
       "campaign": "autostraddle-print-magazine-issue-02-food",
       "who": "riese",
-      "dest": "https://forthem.com/web-pixels@0b92dcedw658847c9p94194e39m8bc44e9f/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
+      "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
       "clicks": 33,
       "signups_first": 2,
-      "signups_last": 3
+      "signups_last": 4
     },
     {
       "campaign": "the-girl-who-became-king-melissa-king-excerpt",
@@ -78,7 +78,7 @@
       "campaign": "baseball-interview",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 10,
+      "clicks": 9,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -86,14 +86,6 @@
       "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
-      "clicks": 8,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "intro-post",
-      "who": "riese",
-      "dest": "https://zine-subscription.forthem.com/",
       "clicks": 8,
       "signups_first": 0,
       "signups_last": 0
@@ -147,6 +139,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "intro-post",
+      "who": "riese",
+      "dest": "https://zine-subscription.forthem.com/",
+      "clicks": 5,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "issue03-launch",
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNFTgBRgOSldc6LoMFF512P/en-us/information",
@@ -195,14 +195,6 @@
       "signups_last": 0
     },
     {
-      "campaign": "anamnesis-t-kira-mahealani-madden",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 1,
-      "signups_first": 1,
-      "signups_last": 0
-    },
-    {
       "campaign": null,
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/products/af-membership",
@@ -224,6 +216,14 @@
       "dest": "https://zinemedia.forthem.com/issue-03/",
       "clicks": 1,
       "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "anamnesis-t-kira-mahealani-madden",
+      "who": "kayla",
+      "dest": "",
+      "clicks": 0,
+      "signups_first": 1,
       "signups_last": 0
     }
   ]
