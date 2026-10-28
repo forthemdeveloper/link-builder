@@ -1,28 +1,28 @@
 {
-  "updated": "2026-10-27T13:27:18Z",
+  "updated": "2026-10-28T13:27:25Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3684,
+      "clicks": 3625,
       "signups_first": 6,
       "signups_last": 6
     },
     {
       "campaign": "mag-subscription-asmenu",
       "who": "em",
-      "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1614,
+      "dest": "https://forthem.com/web-pixels@db2e2262w5773267dpae7c6deam788d1861/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNF1Xzd8CiRpKzApi22Cn0z/en-us/information",
+      "clicks": 1596,
       "signups_first": 42,
-      "signups_last": 48
+      "signups_last": 47
     },
     {
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 456,
+      "clicks": 489,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -30,7 +30,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 371,
+      "clicks": 373,
       "signups_first": 21,
       "signups_last": 20
     },
@@ -38,15 +38,15 @@
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 191,
-      "signups_first": 5,
-      "signups_last": 7
+      "clicks": 201,
+      "signups_first": 6,
+      "signups_last": 8
     },
     {
       "campaign": null,
       "who": "riese",
-      "dest": "https://forthem.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 90,
+      "dest": "https://forthem.com/web-pixels@40bdc1cbwf9dca0b2p29eb11fcm0964d7c8/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
+      "clicks": 86,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -54,15 +54,15 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 85,
+      "clicks": 80,
       "signups_first": 6,
-      "signups_last": 5
+      "signups_last": 4
     },
     {
       "campaign": "autostraddle-print-magazine-issue-02-food",
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
-      "clicks": 33,
+      "clicks": 34,
       "signups_first": 2,
       "signups_last": 4
     },
@@ -139,20 +139,20 @@
       "signups_last": 0
     },
     {
-      "campaign": "intro-post",
-      "who": "riese",
-      "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 5,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "issue03-launch",
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNFTgBRgOSldc6LoMFF512P/en-us/information",
       "clicks": 3,
       "signups_first": 2,
       "signups_last": 1
+    },
+    {
+      "campaign": "intro-post",
+      "who": "riese",
+      "dest": "https://zine-subscription.forthem.com/",
+      "clicks": 3,
+      "signups_first": 0,
+      "signups_last": 0
     },
     {
       "campaign": "queerleader",
