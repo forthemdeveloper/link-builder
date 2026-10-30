@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-29T13:27:19Z",
+  "updated": "2026-10-30T13:27:16Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3582,
+      "clicks": 3514,
       "signups_first": 6,
       "signups_last": 5
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1564,
+      "clicks": 1552,
       "signups_first": 42,
       "signups_last": 46
     },
@@ -22,7 +22,7 @@
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 525,
+      "clicks": 553,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -30,15 +30,15 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 373,
-      "signups_first": 21,
-      "signups_last": 20
+      "clicks": 367,
+      "signups_first": 20,
+      "signups_last": 19
     },
     {
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 205,
+      "clicks": 212,
       "signups_first": 7,
       "signups_last": 9
     },
@@ -46,7 +46,7 @@
       "campaign": null,
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 85,
+      "clicks": 79,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -54,15 +54,15 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 79,
-      "signups_first": 6,
-      "signups_last": 4
+      "clicks": 71,
+      "signups_first": 5,
+      "signups_last": 3
     },
     {
       "campaign": "autostraddle-print-magazine-issue-02-food",
       "who": "riese",
-      "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
-      "clicks": 35,
+      "dest": "https://forthem.com/web-pixels@979a3e2fw137e9400p4daec9d4mf64d2306/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
+      "clicks": 34,
       "signups_first": 2,
       "signups_last": 4
     },
@@ -73,14 +73,6 @@
       "clicks": 10,
       "signups_first": 0,
       "signups_last": 1
-    },
-    {
-      "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
-      "clicks": 8,
-      "signups_first": 0,
-      "signups_last": 0
     },
     {
       "campaign": "we-all-have-a-hunger",
@@ -110,6 +102,14 @@
       "campaign": "issue03",
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
+      "clicks": 7,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 6,
       "signups_first": 0,
       "signups_last": 0
