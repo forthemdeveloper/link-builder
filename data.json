@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-31T13:27:15Z",
+  "updated": "2026-11-02T13:27:08Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3455,
+      "clicks": 3346,
       "signups_first": 6,
       "signups_last": 5
     },
@@ -14,15 +14,15 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1530,
-      "signups_first": 39,
-      "signups_last": 43
+      "clicks": 1481,
+      "signups_first": 35,
+      "signups_last": 41
     },
     {
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 597,
+      "clicks": 691,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -30,23 +30,23 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 372,
-      "signups_first": 21,
-      "signups_last": 20
+      "clicks": 366,
+      "signups_first": 20,
+      "signups_last": 19
     },
     {
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 215,
+      "clicks": 226,
       "signups_first": 7,
       "signups_last": 9
     },
     {
       "campaign": null,
       "who": "riese",
-      "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 78,
+      "dest": "https://forthem.com/web-pixels@b8c7ab0dwe991d1bdp4baaeba4m84fbe7b7/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
+      "clicks": 72,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -54,7 +54,7 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 69,
+      "clicks": 65,
       "signups_first": 5,
       "signups_last": 3
     },
@@ -67,6 +67,14 @@
       "signups_last": 4
     },
     {
+      "campaign": "we-all-have-a-hunger",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 11,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "the-girl-who-became-king-melissa-king-excerpt",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@0d319e54w931ec220p4bfd7e84m89966517/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
@@ -75,12 +83,12 @@
       "signups_last": 1
     },
     {
-      "campaign": "we-all-have-a-hunger",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 10,
-      "signups_first": 0,
-      "signups_last": 0
+      "campaign": "issue03-launch",
+      "who": "riese",
+      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNFTgBRgOSldc6LoMFF512P/en-us/information",
+      "clicks": 9,
+      "signups_first": 2,
+      "signups_last": 1
     },
     {
       "campaign": "issue03",
@@ -115,14 +123,6 @@
       "signups_last": 0
     },
     {
-      "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@e140fb43w9bf5fc8ep9aa43525m5f55e281/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
-      "clicks": 5,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "history-of-lesbian-softball",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@027c20d5w154ab788p53b8a3a3maf518783/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
@@ -131,12 +131,20 @@
       "signups_last": 0
     },
     {
-      "campaign": "issue03-launch",
+      "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@a0197b8fwb149ad23p776976d3m215f3e7b/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
+      "clicks": 3,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "melissa-king-autostraddle-magazine-interview",
       "who": "riese",
-      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNFTgBRgOSldc6LoMFF512P/en-us/information",
-      "clicks": 4,
-      "signups_first": 2,
-      "signups_last": 1
+      "dest": "https://forthem.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNIcLh4PGlxqLHVPbFMJoAc/en-us/information",
+      "clicks": 3,
+      "signups_first": 0,
+      "signups_last": 0
     },
     {
       "campaign": "queerleader",
@@ -187,6 +195,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "queer-owned-cafes-are-the-third-spaces-we-need",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNIbJQubACv4vKtHZTNUqbY/en-us/information",
+      "clicks": 2,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": null,
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/products/af-membership",
@@ -206,14 +222,6 @@
       "campaign": "mag-subscription-asmenu",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 1,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "queer-owned-cafes-are-the-third-spaces-we-need",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNIbJQubACv4vKtHZTNUqbY/en-us/information",
       "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
