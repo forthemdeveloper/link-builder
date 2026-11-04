@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T13:27:09Z",
+  "updated": "2026-11-04T13:27:07Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3308,
+      "clicks": 3274,
       "signups_first": 6,
       "signups_last": 5
     },
@@ -14,15 +14,15 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1459,
+      "clicks": 1434,
       "signups_first": 35,
-      "signups_last": 41
+      "signups_last": 42
     },
     {
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 723,
+      "clicks": 752,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -30,7 +30,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 366,
+      "clicks": 361,
       "signups_first": 21,
       "signups_last": 20
     },
@@ -38,7 +38,7 @@
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 233,
+      "clicks": 243,
       "signups_first": 7,
       "signups_last": 9
     },
@@ -54,7 +54,7 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 56,
+      "clicks": 53,
       "signups_first": 4,
       "signups_last": 3
     },
@@ -123,18 +123,10 @@
       "signups_last": 0
     },
     {
-      "campaign": "our-most-anticipated-queer-books-for-august-2026",
+      "campaign": "queer-owned-cafes-are-the-third-spaces-we-need",
       "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@a0197b8fwb149ad23p776976d3m215f3e7b/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 5,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@a0197b8fwb149ad23p776976d3m215f3e7b/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
-      "clicks": 3,
+      "dest": "https://forthem.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNIbJQubACv4vKtHZTNUqbY/en-us/information",
+      "clicks": 4,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -142,6 +134,22 @@
       "campaign": "melissa-king-autostraddle-magazine-interview",
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNIcLh4PGlxqLHVPbFMJoAc/en-us/information",
+      "clicks": 3,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "no-pain-still-gain-thoughts-on-trying-your-best-rather-than-being-your-best",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@02d13049w588a3a08pb529f9b2m27ddd415/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 3,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "our-most-anticipated-queer-books-for-august-2026",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
       "clicks": 3,
       "signups_first": 0,
       "signups_last": 0
@@ -195,14 +203,6 @@
       "signups_last": 0
     },
     {
-      "campaign": "queer-owned-cafes-are-the-third-spaces-we-need",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@610a19cewf693d529pf324840bm6169d9b4/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNIbJQubACv4vKtHZTNUqbY/en-us/information",
-      "clicks": 2,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": null,
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/products/af-membership",
@@ -214,6 +214,14 @@
       "campaign": "appetite-paramita-review",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@f702c9c6w093aa812p63aa4707m52ee6b05/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 1,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
