@@ -1,28 +1,28 @@
 {
-  "updated": "2026-11-06T13:27:12Z",
+  "updated": "2026-11-07T13:27:08Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3185,
-      "signups_first": 4,
-      "signups_last": 3
+      "clicks": 3116,
+      "signups_first": 3,
+      "signups_last": 2
     },
     {
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1391,
-      "signups_first": 34,
-      "signups_last": 41
+      "clicks": 1385,
+      "signups_first": 33,
+      "signups_last": 40
     },
     {
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 841,
+      "clicks": 877,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -30,15 +30,15 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 355,
-      "signups_first": 21,
-      "signups_last": 20
+      "clicks": 353,
+      "signups_first": 22,
+      "signups_last": 21
     },
     {
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 267,
+      "clicks": 272,
       "signups_first": 8,
       "signups_last": 10
     },
@@ -54,7 +54,7 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 49,
+      "clicks": 47,
       "signups_first": 2,
       "signups_last": 1
     },
@@ -147,14 +147,6 @@
       "signups_last": 0
     },
     {
-      "campaign": "our-most-anticipated-queer-books-for-august-2026",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 3,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "autostraddle-site",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
@@ -195,6 +187,22 @@
       "signups_last": 0
     },
     {
+      "campaign": "our-most-anticipated-queer-books-for-august-2026",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 2,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "our-most-anticipated-queer-books-for-november-2026",
+      "who": "kayla",
+      "dest": "https://zine-subscription.forthem.com/",
+      "clicks": 2,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "photoessay-nigerias-first-pride-playoffs",
       "who": "kayla",
       "dest": "https://zine-subscription.forthem.com/",
@@ -230,14 +238,6 @@
       "campaign": "mag-subscription-asmenu",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 1,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "our-most-anticipated-queer-books-for-november-2026",
-      "who": "kayla",
-      "dest": "https://zine-subscription.forthem.com/",
       "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
