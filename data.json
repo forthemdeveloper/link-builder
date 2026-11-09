@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-08T13:27:09Z",
+  "updated": "2026-11-09T13:27:10Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3041,
+      "clicks": 3005,
       "signups_first": 3,
       "signups_last": 2
     },
@@ -14,15 +14,15 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1371,
-      "signups_first": 33,
-      "signups_last": 40
+      "clicks": 1350,
+      "signups_first": 28,
+      "signups_last": 37
     },
     {
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 914,
+      "clicks": 937,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -30,15 +30,15 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 344,
+      "clicks": 333,
       "signups_first": 23,
-      "signups_last": 22
+      "signups_last": 21
     },
     {
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 280,
+      "clicks": 287,
       "signups_first": 8,
       "signups_last": 10
     },
@@ -46,7 +46,7 @@
       "campaign": null,
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 59,
+      "clicks": 48,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -54,7 +54,7 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 48,
+      "clicks": 46,
       "signups_first": 2,
       "signups_last": 1
     },
@@ -67,20 +67,20 @@
       "signups_last": 4
     },
     {
-      "campaign": "we-all-have-a-hunger",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 11,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
       "campaign": "the-girl-who-became-king-melissa-king-excerpt",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@0d319e54w931ec220p4bfd7e84m89966517/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
       "clicks": 10,
       "signups_first": 0,
       "signups_last": 1
+    },
+    {
+      "campaign": "we-all-have-a-hunger",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@f01ff87fw60c3124ep2ab91c4cm696d2878/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 9,
+      "signups_first": 0,
+      "signups_last": 0
     },
     {
       "campaign": "issue03-launch",
@@ -103,14 +103,6 @@
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@027c20d5w154ab788p53b8a3a3maf518783/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 5,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "deadlifting-our-way-to-a-more-inclusive-strength-sports-world",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
-      "clicks": 4,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -163,6 +155,14 @@
       "signups_last": 0
     },
     {
+      "campaign": "deadlifting-our-way-to-a-more-inclusive-strength-sports-world",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@979a3e2fw137e9400p4daec9d4mf64d2306/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
+      "clicks": 2,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
       "campaign": "egg-freezing",
       "who": "kylo",
       "dest": "https://forthem.com/web-pixels@0dfa916bwdc8841d5pf9ea94c2m0a5bcf0f/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNGNWa2rjWhyUHIIX3c3nbc/en-us/information",
@@ -206,14 +206,6 @@
       "campaign": "appetite-paramita-review",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@f702c9c6w093aa812p63aa4707m52ee6b05/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 1,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "for-50-years-sinister-wisdom-has-said-yes-to-lesbians-in-print",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@8b4bdd91w657eaa09pa445a201m797ba740/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 1,
       "signups_first": 0,
       "signups_last": 0
