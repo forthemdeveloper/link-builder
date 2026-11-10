@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-09T13:27:10Z",
+  "updated": "2026-11-10T13:27:03Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 3005,
+      "clicks": 2968,
       "signups_first": 3,
       "signups_last": 2
     },
@@ -14,7 +14,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1350,
+      "clicks": 1337,
       "signups_first": 28,
       "signups_last": 37
     },
@@ -22,7 +22,7 @@
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 937,
+      "clicks": 1001,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -31,32 +31,32 @@
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
       "clicks": 333,
-      "signups_first": 23,
-      "signups_last": 21
+      "signups_first": 22,
+      "signups_last": 19
     },
     {
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 287,
+      "clicks": 301,
       "signups_first": 8,
       "signups_last": 10
-    },
-    {
-      "campaign": null,
-      "who": "riese",
-      "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 48,
-      "signups_first": 0,
-      "signups_last": 0
     },
     {
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 46,
+      "clicks": 44,
       "signups_first": 2,
       "signups_last": 1
+    },
+    {
+      "campaign": null,
+      "who": "riese",
+      "dest": "https://zinemedia.forthem.com/issue-03/",
+      "clicks": 38,
+      "signups_first": 0,
+      "signups_last": 0
     },
     {
       "campaign": "autostraddle-print-magazine-issue-02-food",
@@ -67,6 +67,14 @@
       "signups_last": 4
     },
     {
+      "campaign": "quiz",
+      "who": "riese",
+      "dest": "https://zine-subscription.forthem.com/",
+      "clicks": 20,
+      "signups_first": 1,
+      "signups_last": 1
+    },
+    {
       "campaign": "the-girl-who-became-king-melissa-king-excerpt",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@0d319e54w931ec220p4bfd7e84m89966517/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
@@ -75,9 +83,9 @@
       "signups_last": 1
     },
     {
-      "campaign": "we-all-have-a-hunger",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@f01ff87fw60c3124ep2ab91c4cm696d2878/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "campaign": "issue03",
+      "who": "emily",
+      "dest": "https://zine-subscription.forthem.com/",
       "clicks": 9,
       "signups_first": 0,
       "signups_last": 0
@@ -91,9 +99,9 @@
       "signups_last": 1
     },
     {
-      "campaign": "issue03",
-      "who": "emily",
-      "dest": "https://zine-subscription.forthem.com/",
+      "campaign": "we-all-have-a-hunger",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@f0278712w4dc1d85epb91e7f02mc957d251/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
       "clicks": 8,
       "signups_first": 0,
       "signups_last": 0
@@ -134,6 +142,14 @@
       "campaign": "no-pain-still-gain-thoughts-on-trying-your-best-rather-than-being-your-best",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@02d13049w588a3a08pb529f9b2m27ddd415/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 3,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "our-most-anticipated-queer-books-for-november-2026",
+      "who": "kayla",
+      "dest": "https://zine-subscription.forthem.com/",
       "clicks": 3,
       "signups_first": 0,
       "signups_last": 0
@@ -182,14 +198,6 @@
       "campaign": "megan-stalter-at-the-emmys",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@0a3c9e70wd8b01bb2p898e1257m7e92acc4/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 2,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "our-most-anticipated-queer-books-for-november-2026",
-      "who": "kayla",
-      "dest": "https://zine-subscription.forthem.com/",
       "clicks": 2,
       "signups_first": 0,
       "signups_last": 0
