@@ -1,36 +1,36 @@
 {
-  "updated": "2026-11-10T13:27:03Z",
+  "updated": "2026-11-11T13:27:02Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 2968,
+      "clicks": 2922,
       "signups_first": 3,
       "signups_last": 2
-    },
-    {
-      "campaign": "mag-subscription-asmenu",
-      "who": "em",
-      "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1337,
-      "signups_first": 28,
-      "signups_last": 37
     },
     {
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 1001,
+      "clicks": 1715,
       "signups_first": 1,
       "signups_last": 3
+    },
+    {
+      "campaign": "mag-subscription-asmenu",
+      "who": "em",
+      "dest": "https://zine-subscription.forthem.com/",
+      "clicks": 1312,
+      "signups_first": 27,
+      "signups_last": 37
     },
     {
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 333,
+      "clicks": 331,
       "signups_first": 22,
       "signups_last": 19
     },
@@ -38,7 +38,7 @@
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 301,
+      "clicks": 308,
       "signups_first": 8,
       "signups_last": 10
     },
@@ -46,17 +46,9 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 44,
+      "clicks": 40,
       "signups_first": 2,
       "signups_last": 1
-    },
-    {
-      "campaign": null,
-      "who": "riese",
-      "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 38,
-      "signups_first": 0,
-      "signups_last": 0
     },
     {
       "campaign": "autostraddle-print-magazine-issue-02-food",
@@ -70,9 +62,17 @@
       "campaign": "quiz",
       "who": "riese",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 20,
+      "clicks": 34,
       "signups_first": 1,
       "signups_last": 1
+    },
+    {
+      "campaign": null,
+      "who": "riese",
+      "dest": "https://forthem.com/web-pixels@979a3e2fw137e9400p4daec9d4mf64d2306/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
+      "clicks": 33,
+      "signups_first": 0,
+      "signups_last": 0
     },
     {
       "campaign": "the-girl-who-became-king-melissa-king-excerpt",
@@ -101,8 +101,8 @@
     {
       "campaign": "we-all-have-a-hunger",
       "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@f0278712w4dc1d85epb91e7f02mc957d251/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 8,
+      "dest": "https://zine-subscription.forthem.com/",
+      "clicks": 6,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -127,6 +127,14 @@
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@80079e4cw22952a98p55856082md4f1b6b4/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-03",
       "clicks": 4,
+      "signups_first": 0,
+      "signups_last": 0
+    },
+    {
+      "campaign": "intro-post",
+      "who": "riese",
+      "dest": "https://zine-subscription.forthem.com/",
+      "clicks": 3,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -182,14 +190,6 @@
       "campaign": "egg-freezing",
       "who": "kylo",
       "dest": "https://forthem.com/web-pixels@0dfa916bwdc8841d5pf9ea94c2m0a5bcf0f/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNGNWa2rjWhyUHIIX3c3nbc/en-us/information",
-      "clicks": 2,
-      "signups_first": 0,
-      "signups_last": 0
-    },
-    {
-      "campaign": "intro-post",
-      "who": "riese",
-      "dest": "https://zine-subscription.forthem.com/",
       "clicks": 2,
       "signups_first": 0,
       "signups_last": 0
