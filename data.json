@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-16T13:27:08Z",
+  "updated": "2026-11-18T13:27:10Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 2736,
+      "clicks": 2668,
       "signups_first": 3,
       "signups_last": 2
     },
@@ -14,7 +14,7 @@
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 1926,
+      "clicks": 1995,
       "signups_first": 1,
       "signups_last": 3
     },
@@ -22,15 +22,15 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1249,
+      "clicks": 1234,
       "signups_first": 27,
-      "signups_last": 37
+      "signups_last": 36
     },
     {
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 344,
+      "clicks": 366,
       "signups_first": 9,
       "signups_last": 10
     },
@@ -38,15 +38,15 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 309,
-      "signups_first": 23,
-      "signups_last": 20
+      "clicks": 313,
+      "signups_first": 22,
+      "signups_last": 18
     },
     {
       "campaign": "quiz",
       "who": "riese",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 84,
+      "clicks": 87,
       "signups_first": 1,
       "signups_last": 1
     },
@@ -61,8 +61,8 @@
     {
       "campaign": "autostraddle-print-magazine-issue-02-food",
       "who": "riese",
-      "dest": "https://forthem.com/web-pixels@5f5c0921we198f819p6efddfcfm66c0f9a3/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
-      "clicks": 32,
+      "dest": "https://forthem.com/web-pixels@2d9dfbe8w1156b718pbb247b16m64115e31/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
+      "clicks": 31,
       "signups_first": 1,
       "signups_last": 4
     },
@@ -70,7 +70,7 @@
       "campaign": null,
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 27,
+      "clicks": 26,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -78,7 +78,7 @@
       "campaign": "issue03",
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 22,
+      "clicks": 25,
       "signups_first": 0,
       "signups_last": 0
     },
