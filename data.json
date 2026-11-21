@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-20T13:27:02Z",
+  "updated": "2026-11-21T13:27:06Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 2574,
+      "clicks": 2530,
       "signups_first": 3,
       "signups_last": 2
     },
@@ -14,7 +14,7 @@
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 2058,
+      "clicks": 2096,
       "signups_first": 2,
       "signups_last": 4
     },
@@ -22,7 +22,7 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1204,
+      "clicks": 1186,
       "signups_first": 26,
       "signups_last": 35
     },
@@ -30,7 +30,7 @@
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 388,
+      "clicks": 399,
       "signups_first": 11,
       "signups_last": 12
     },
@@ -38,7 +38,7 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 322,
+      "clicks": 341,
       "signups_first": 22,
       "signups_last": 18
     },
@@ -46,7 +46,7 @@
       "campaign": "quiz",
       "who": "riese",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 89,
+      "clicks": 90,
       "signups_first": 1,
       "signups_last": 1
     },
@@ -59,20 +59,20 @@
       "signups_last": 2
     },
     {
-      "campaign": "autostraddle-print-magazine-issue-02-food",
-      "who": "riese",
-      "dest": "https://forthem.com/web-pixels@2d9dfbe8w1156b718pbb247b16m64115e31/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
-      "clicks": 29,
-      "signups_first": 1,
-      "signups_last": 4
-    },
-    {
       "campaign": "issue03",
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 26,
+      "clicks": 30,
       "signups_first": 0,
       "signups_last": 0
+    },
+    {
+      "campaign": "autostraddle-print-magazine-issue-02-food",
+      "who": "riese",
+      "dest": "https://forthem.com/web-pixels@2d9dfbe8w1156b718pbb247b16m64115e31/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1",
+      "clicks": 24,
+      "signups_first": 1,
+      "signups_last": 3
     },
     {
       "campaign": null,
@@ -91,20 +91,20 @@
       "signups_last": 1
     },
     {
+      "campaign": "ai-does-not-have-better-ideas-than-you",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@997a76bdw6b2572e2pb4e93427m632f4b2a/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 9,
+      "signups_first": 1,
+      "signups_last": 0
+    },
+    {
       "campaign": "issue03-launch",
       "who": "riese",
       "dest": "https://forthem.com/web-pixels@5696ca25wf1f4e112pe303b5b1m7dd82084/custom/web-pixel-260866214@3/sandbox/modern/checkouts/cn/hWNGFxBZ9fTRxbxQNqvjNOD3/en-us/stock-problems",
       "clicks": 8,
       "signups_first": 1,
       "signups_last": 1
-    },
-    {
-      "campaign": "ai-does-not-have-better-ideas-than-you",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@997a76bdw6b2572e2pb4e93427m632f4b2a/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 8,
-      "signups_first": 1,
-      "signups_last": 0
     },
     {
       "campaign": "history-of-lesbian-softball",
@@ -129,6 +129,14 @@
       "clicks": 4,
       "signups_first": 0,
       "signups_last": 0
+    },
+    {
+      "campaign": "books-to-buy-for-gay-jocks-and-sports-fans",
+      "who": "kayla",
+      "dest": "https://forthem.com/web-pixels@59be8e47w556dc13fpc8f027a5m478ef996/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
+      "clicks": 3,
+      "signups_first": 0,
+      "signups_last": 1
     },
     {
       "campaign": "intro-post",
@@ -169,14 +177,6 @@
       "clicks": 3,
       "signups_first": 0,
       "signups_last": 0
-    },
-    {
-      "campaign": "books-to-buy-for-gay-jocks-and-sports-fans",
-      "who": "kayla",
-      "dest": "https://forthem.com/web-pixels@59be8e47w556dc13fpc8f027a5m478ef996/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 2,
-      "signups_first": 0,
-      "signups_last": 1
     },
     {
       "campaign": "autostraddle-site",
