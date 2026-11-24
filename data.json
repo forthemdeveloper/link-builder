@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-22T13:27:03Z",
+  "updated": "2026-11-24T13:27:13Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 2475,
+      "clicks": 2390,
       "signups_first": 3,
       "signups_last": 2
     },
@@ -14,23 +14,23 @@
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 2157,
-      "signups_first": 2,
-      "signups_last": 4
+      "clicks": 2238,
+      "signups_first": 3,
+      "signups_last": 5
     },
     {
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1172,
-      "signups_first": 25,
+      "clicks": 1136,
+      "signups_first": 26,
       "signups_last": 34
     },
     {
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 409,
+      "clicks": 426,
       "signups_first": 11,
       "signups_last": 12
     },
@@ -38,15 +38,15 @@
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 348,
+      "clicks": 345,
       "signups_first": 22,
-      "signups_last": 18
+      "signups_last": 19
     },
     {
       "campaign": "quiz",
       "who": "riese",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 90,
+      "clicks": 91,
       "signups_first": 1,
       "signups_last": 1
     },
@@ -62,7 +62,7 @@
       "campaign": "issue03",
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 32,
+      "clicks": 35,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -77,8 +77,8 @@
     {
       "campaign": null,
       "who": "riese",
-      "dest": "https://forthem.com/web-pixels@2d9dfbe8w1156b718pbb247b16m64115e31/custom/web-pixel-260866214@3/sandbox/modern/products/autostraddle-print-issue-03",
-      "clicks": 22,
+      "dest": "https://zinemedia.forthem.com/issue-03/",
+      "clicks": 18,
       "signups_first": 0,
       "signups_last": 0
     },
@@ -86,7 +86,7 @@
       "campaign": "ai-does-not-have-better-ideas-than-you",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@997a76bdw6b2572e2pb4e93427m632f4b2a/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 10,
+      "clicks": 11,
       "signups_first": 1,
       "signups_last": 0
     },
@@ -110,7 +110,7 @@
       "campaign": "books-to-buy-for-gay-jocks-and-sports-fans",
       "who": "kayla",
       "dest": "https://forthem.com/web-pixels@59be8e47w556dc13fpc8f027a5m478ef996/custom/web-pixel-260866214@3/sandbox/modern/collections/print-issues-1/products/autostraddle-print-issue-02",
-      "clicks": 5,
+      "clicks": 7,
       "signups_first": 0,
       "signups_last": 1
     },
