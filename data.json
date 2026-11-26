@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-25T13:27:07Z",
+  "updated": "2026-11-26T13:27:07Z",
   "window_days": 90,
   "articles": [
     {
       "campaign": "as-house-ads",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 2354,
+      "clicks": 2298,
       "signups_first": 3,
       "signups_last": 2
     },
@@ -14,7 +14,7 @@
       "campaign": "issue03",
       "who": "motti",
       "dest": "https://zinemedia.forthem.com/",
-      "clicks": 2271,
+      "clicks": 2296,
       "signups_first": 3,
       "signups_last": 5
     },
@@ -22,24 +22,24 @@
       "campaign": "mag-subscription-asmenu",
       "who": "em",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 1107,
-      "signups_first": 27,
-      "signups_last": 35
+      "clicks": 1088,
+      "signups_first": 25,
+      "signups_last": 34
     },
     {
       "campaign": "homepage",
       "who": "em",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 440,
-      "signups_first": 13,
-      "signups_last": 14
+      "clicks": 451,
+      "signups_first": 14,
+      "signups_last": 15
     },
     {
       "campaign": "widget",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 338,
-      "signups_first": 22,
+      "clicks": 337,
+      "signups_first": 21,
       "signups_last": 19
     },
     {
@@ -54,15 +54,15 @@
       "campaign": "welcome-to-the-sports-issue",
       "who": "riese",
       "dest": "https://zinemedia.forthem.com/issue-03/",
-      "clicks": 39,
-      "signups_first": 3,
-      "signups_last": 2
+      "clicks": 41,
+      "signups_first": 4,
+      "signups_last": 3
     },
     {
       "campaign": "issue03",
       "who": "emily",
       "dest": "https://zine-subscription.forthem.com/",
-      "clicks": 35,
+      "clicks": 36,
       "signups_first": 0,
       "signups_last": 0
     },
